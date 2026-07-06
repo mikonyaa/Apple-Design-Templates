@@ -28,12 +28,12 @@ This is the showcase for a growing collection of independent SwiftUI templates. 
   <tr>
     <td align="center">
       <a href="https://github.com/mikonyaa/LiquidGlassTabBars">
-        <img src="Assets/liquid-glass-tab-bars.gif" width="300" alt="Liquid Glass Tab Bars animated preview">
+        <img src="Assets/liquid-glass-tab-bars.gif" width="300" height="653" alt="Liquid Glass Tab Bars animated preview">
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/mikonyaa/AdaptiveAppShell">
-        <img src="Assets/adaptive-app-shell.gif" width="300" alt="Adaptive App Shell animated preview">
+        <img src="Assets/adaptive-app-shell.gif" width="300" height="653" alt="Adaptive App Shell animated preview">
       </a>
     </td>
   </tr>
@@ -41,7 +41,7 @@ This is the showcase for a growing collection of independent SwiftUI templates. 
     <td valign="top">
       Three polished tab-bar approaches: native, floating, and morphing. Includes iOS 26 Liquid Glass behavior, practical fallbacks, four themes, and accessibility-aware motion.
       <br><br>
-      <strong>Stable:</strong> 1.0.1 · <a href="https://github.com/mikonyaa/LiquidGlassTabBars">Repository</a> · <a href="https://github.com/mikonyaa/LiquidGlassTabBars/releases/latest">Release</a>
+      <strong>Stable:</strong> 1.0.2 · <a href="https://github.com/mikonyaa/LiquidGlassTabBars">Repository</a> · <a href="https://github.com/mikonyaa/LiquidGlassTabBars/releases/latest">Release</a>
     </td>
     <td valign="top">
       One navigation model that adapts from iPhone tabs to an iPad sidebar and optional inspector. Includes independent navigation history, deep links, and three gradient-free themes.
