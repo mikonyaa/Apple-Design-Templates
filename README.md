@@ -1,14 +1,14 @@
 <div align="center">
-  <a href="#templates"><img src="Assets/banner.png" alt="Apple Design Templates by miko.os" width="100%"></a>
+  <a href="#featured-templates"><img src="Assets/banner.png" alt="Apple Design Templates by miko.os" width="100%"></a>
   <br><br>
   <h1>Apple Design Templates</h1>
-  <p><strong>Production-minded SwiftUI foundations for Apple platforms.</strong></p>
-  <p>Focused components, real Xcode demos, and native behavior you can adapt to your own product.</p>
+  <p><strong>Focused SwiftUI systems for real Apple-platform products.</strong></p>
+  <p>Study a complete implementation, run the demo, and adapt only what your product needs.</p>
   <p>Curated by <a href="https://github.com/mikonyaa"><strong>miko.os</strong></a></p>
   <p>
     <a href="https://www.swift.org"><img alt="Swift 6" src="https://img.shields.io/badge/Swift-6.0-F05138?logo=swift&logoColor=white"></a>
     <a href="https://developer.apple.com/xcode/swiftui/"><img alt="SwiftUI" src="https://img.shields.io/badge/SwiftUI-Native-0A7AFF?logo=swift&logoColor=white"></a>
-    <a href="#templates"><img alt="Templates" src="https://img.shields.io/badge/Templates-2-0A7AFF"></a>
+    <a href="#featured-templates"><img alt="Live templates" src="https://img.shields.io/badge/Live_templates-2-0A7AFF"></a>
     <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-2EA44F"></a>
   </p>
   <p><a href="README.ru.md">Русская версия</a></p>
@@ -16,9 +16,22 @@
 
 ---
 
-This is the showcase for a growing collection of independent SwiftUI templates. Each project keeps its source, documentation, issues, and releases in a dedicated repository so the catalog stays visual and easy to browse.
+Apple Design Templates is a curated collection of independent SwiftUI starting points. It is intentionally a catalog rather than a monorepo: every template has its own focused source, demo, documentation, issues, CI, and releases.
 
-## Templates
+<table>
+  <tr>
+    <th width="33%">Native-first</th>
+    <th width="33%">Runnable by default</th>
+    <th width="33%">Designed to adapt</th>
+  </tr>
+  <tr>
+    <td valign="top">System APIs and Apple-platform conventions form the baseline. Custom UI is used only when it adds a clear product benefit.</td>
+    <td valign="top">Every entry includes an Xcode demo with deterministic local data—no account, backend, or setup ceremony required.</td>
+    <td valign="top">Small packages, semantic themes, and explicit state ownership make each template practical to restyle and integrate.</td>
+  </tr>
+</table>
+
+## Featured templates
 
 <table>
   <tr>
@@ -39,40 +52,78 @@ This is the showcase for a growing collection of independent SwiftUI templates. 
   </tr>
   <tr>
     <td valign="top">
-      Three polished tab-bar approaches: native, floating, and morphing. Includes iOS 26 Liquid Glass behavior, practical fallbacks, four themes, and accessibility-aware motion.
-      <br><br>
-      <strong>Stable:</strong> 1.0.2 · <a href="https://github.com/mikonyaa/LiquidGlassTabBars">Repository</a> · <a href="https://github.com/mikonyaa/LiquidGlassTabBars/releases/latest">Release</a>
+      <p><strong>Stable 1.0.2</strong> · iOS 17+ · Swift 6</p>
+      <p>Three tab-bar approaches built around one reusable selection model.</p>
+      <ul>
+        <li>Native, floating, and morphing variants</li>
+        <li>iOS 26 Liquid Glass with practical fallbacks</li>
+        <li>Dynamic Type, Reduce Motion, and Reduce Transparency support</li>
+      </ul>
+      <p><strong><a href="https://github.com/mikonyaa/LiquidGlassTabBars">Repository</a></strong> · <a href="https://github.com/mikonyaa/LiquidGlassTabBars/releases/latest">Release</a> · <a href="https://github.com/mikonyaa/LiquidGlassTabBars/tree/main/Docs">Documentation</a></p>
     </td>
     <td valign="top">
-      One navigation model that adapts from iPhone tabs to an iPad sidebar and optional inspector. Includes independent navigation history, deep links, and three gradient-free themes.
-      <br><br>
-      <strong>Stable:</strong> 1.0.1 · <a href="https://github.com/mikonyaa/AdaptiveAppShell">Repository</a> · <a href="https://github.com/mikonyaa/AdaptiveAppShell/releases/latest">Release</a>
+      <p><strong>Stable 1.0.1</strong> · iOS 17+ · Swift 6</p>
+      <p>One navigation model that scales from compact tabs to a regular-width workspace.</p>
+      <ul>
+        <li>Bottom tabs on iPhone and a sidebar on iPad</li>
+        <li>Independent navigation history and enum-based deep links</li>
+        <li>Optional inspector and three restrained, gradient-free themes</li>
+      </ul>
+      <p><strong><a href="https://github.com/mikonyaa/AdaptiveAppShell">Repository</a></strong> · <a href="https://github.com/mikonyaa/AdaptiveAppShell/releases/latest">Release</a> · <a href="https://github.com/mikonyaa/AdaptiveAppShell/tree/main/Docs">Documentation</a></p>
     </td>
   </tr>
 </table>
 
-## Choose a starting point
+## Compare by need
 
-| If you need… | Start here |
+| Decision | Liquid Glass Tab Bars | Adaptive App Shell |
+| --- | --- | --- |
+| Best starting point | Adding a polished navigation control to an existing app | Establishing navigation for a new iPhone and iPad product |
+| Primary responsibility | Tab selection, presentation, and theming | App-wide destinations, navigation history, sidebar, and inspector |
+| Adaptive behavior | Three interchangeable tab-bar treatments | Compact tabs and regular-width split navigation |
+| Integration scope | Focused component package | Application-shell foundation |
+
+## What every template includes
+
+| Project surface | Collection baseline |
 | --- | --- |
-| A polished navigation control for an existing app | [Liquid Glass Tab Bars](https://github.com/mikonyaa/LiquidGlassTabBars) |
-| A scalable navigation foundation for a new iPhone and iPad app | [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell) |
+| Reusable source | A focused Swift Package with no third-party runtime dependencies |
+| Working example | A runnable Xcode project using deterministic local data |
+| Platform behavior | Accessibility considerations and practical fallbacks for supported systems |
+| Verification | Unit tests, GitHub Actions, semantic versions, and a changelog |
+| Learning material | Architecture, integration, customization, accessibility, and beginner guidance |
+| Honest previews | Screenshots and motion captured from the real demo rather than concept renders |
 
-## Collection standard
+## How the collection works
 
-- Reusable Swift Package with no third-party runtime dependencies
-- Runnable Xcode demo built from deterministic local data
-- Accessibility-aware behavior and practical OS fallbacks
-- Tests, CI, MIT license, versioned releases, and integration guidance
-- Preview media captured from the real demo
+<table>
+  <tr>
+    <th width="33%">1 · Choose</th>
+    <th width="33%">2 · Run</th>
+    <th width="33%">3 · Adapt</th>
+  </tr>
+  <tr>
+    <td valign="top">Pick the smallest template that matches the problem you are solving.</td>
+    <td valign="top">Open its repository, launch the included demo, and review the implementation notes.</td>
+    <td valign="top">Add the Swift Package or bring the focused source into your own design system.</td>
+  </tr>
+</table>
 
-The catalog keeps only a concise summary and motion preview. Architecture, customization, beginner explanations, and complete source live in each template repository.
+## Collection principles
 
-More focused templates will be added when they are complete, tested, and ready to use.
+- **Native behavior over imitation.** Platform conventions remain intact unless a custom interaction earns its complexity.
+- **Clarity over decoration.** Hierarchy, spacing, contrast, and motion must support the content rather than compete with it.
+- **Adaptation over rigid screens.** Components expose semantic configuration and layouts respond to their environment.
+- **Finished systems over unfinished libraries.** A small template is listed only when its code, demo, docs, tests, release, and preview agree.
+
+> New templates appear here only after they are runnable, documented, tested, and ready to adapt. The catalog does not use fictional projects or placeholder previews to look larger than it is.
+
+Detailed implementation guidance belongs in the relevant template repository. Collection-level proposals are welcome through [Issues](https://github.com/mikonyaa/Apple-Design-Templates/issues) after reviewing [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
 <div align="center">
   <p><a href="CONTRIBUTING.md">Contributing</a> · <a href="SECURITY.md">Security</a> · <a href="LICENSE">MIT License</a></p>
   <p>Built and maintained by <a href="https://github.com/mikonyaa"><strong>miko.os</strong></a>.</p>
+  <p>If this collection helps you build a better Apple-platform app, consider starring the repository or the template you used.</p>
 </div>
