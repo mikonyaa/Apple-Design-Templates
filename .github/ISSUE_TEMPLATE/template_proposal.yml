@@ -1,0 +1,37 @@
+name: Template proposal
+description: Propose a focused standalone template for the collection.
+title: "[Template]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Recurring problem
+      description: Explain the product or engineering problem this template would solve.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope
+      description: Describe the reusable package, demo, supported platforms, and minimum OS versions.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why a template is useful
+      description: Explain why this should be more than a short code sample.
+    validations:
+      required: true
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility and fallback behavior
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References or examples
