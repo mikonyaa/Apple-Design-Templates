@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Liquid Glass Tab Bars issues
+    url: https://github.com/mikonyaa/LiquidGlassTabBars/issues/new/choose
+    about: Report tab bar bugs and integration questions here.
+  - name: Adaptive App Shell issues
+    url: https://github.com/mikonyaa/AdaptiveAppShell/issues/new/choose
+    about: Report app shell bugs and integration questions here.
