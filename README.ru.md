@@ -9,7 +9,7 @@
 | Проект | Лучше всего подходит для | Версия |
 | --- | --- | --- |
 | [Liquid Glass Tab Bars](https://github.com/mikonyaa/LiquidGlassTabBars) | Добавления нативного, плавающего или morphing tab bar в существующее приложение | `1.0.2` |
-| [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell) | Построения общей навигации с вкладками на iPhone, sidebar и inspector на iPad | `1.0.1` |
+| [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell) | Построения общей навигации с вкладками на iPhone, sidebar и inspector на iPad | `1.0.2` |
 
 ## Стандарт коллекции
 

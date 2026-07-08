@@ -62,7 +62,7 @@ Apple Design Templates is a curated collection of independent SwiftUI starting p
       <p><strong><a href="https://github.com/mikonyaa/LiquidGlassTabBars">Repository</a></strong> · <a href="https://github.com/mikonyaa/LiquidGlassTabBars/releases/latest">Release</a> · <a href="https://github.com/mikonyaa/LiquidGlassTabBars/tree/main/Docs">Documentation</a></p>
     </td>
     <td valign="top">
-      <p><strong>Stable 1.0.1</strong> · iOS 17+ · Swift 6</p>
+      <p><strong>Stable 1.0.2</strong> · iOS 17+ · Swift 6</p>
       <p>One navigation model that scales from compact tabs to a regular-width workspace.</p>
       <ul>
         <li>Bottom tabs on iPhone and a sidebar on iPad</li>
