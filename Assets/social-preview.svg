@@ -107,40 +107,29 @@
   </g>
 
   <g filter="url(#smallShadow)">
-    <rect x="819" y="492" width="148" height="32" rx="16" fill="#22242B" stroke="#2F323B"/>
-    <circle cx="846" cy="508" r="5" fill="#F4F5F7"/>
-    <rect x="880" y="502" width="58" height="12" rx="6" fill="#3B3E48"/>
-    <rect x="819" y="529" width="148" height="32" rx="16" fill="#1C1E24" stroke="#292C34"/>
-    <rect x="843" y="539" width="13" height="13" rx="3" stroke="#F4F5F7" stroke-width="1.5"/>
-    <rect x="880" y="539" width="70" height="12" rx="6" fill="#343741"/>
-    <rect x="819" y="566" width="148" height="32" rx="16" fill="#202229" stroke="#2C2F37"/>
-    <rect x="843" y="576" width="13" height="13" rx="3" stroke="#F4F5F7" stroke-width="1.5"/>
-    <rect x="880" y="576" width="54" height="12" rx="6" fill="#363944"/>
+    <rect x="812" y="492" width="172" height="108" rx="24" fill="#202229" stroke="#2D3038"/>
+    <rect x="833" y="513" width="48" height="48" rx="15" fill="#111318"/>
+    <rect x="846" y="527" width="22" height="4" rx="2" fill="#F6F7F8"/>
+    <rect x="846" y="541" width="22" height="4" rx="2" fill="#6F7480"/>
+    <rect x="900" y="516" width="62" height="10" rx="5" fill="#5A5E69"/>
+    <rect x="900" y="537" width="48" height="8" rx="4" fill="#383B45"/>
+    <rect x="900" y="555" width="70" height="8" rx="4" fill="#2F323B"/>
+    <circle cx="842" cy="581" r="4" fill="#0A84FF"/>
+    <rect x="856" y="577" width="84" height="8" rx="4" fill="#343842"/>
   </g>
 
   <g filter="url(#smallShadow)">
-    <rect x="997" y="489" width="118" height="71" rx="20" fill="#202229" stroke="#2D3038"/>
-    <rect x="1016" y="508" width="16" height="16" rx="4" fill="#F9FAFB"/>
-    <rect x="1041" y="508" width="47" height="8" rx="4" fill="#565A65"/>
-    <rect x="1016" y="532" width="16" height="16" rx="4" fill="#555A66"/>
-    <rect x="1041" y="532" width="55" height="8" rx="4" fill="#343842"/>
+    <rect x="1008" y="492" width="106" height="108" rx="24" fill="#202229" stroke="#2D3038"/>
+    <rect x="1030" y="514" width="24" height="24" rx="8" fill="#0A84FF"/>
+    <rect x="1068" y="514" width="24" height="24" rx="8" fill="#F6F7F8"/>
+    <rect x="1030" y="552" width="24" height="24" rx="8" fill="#555A66"/>
+    <rect x="1068" y="552" width="24" height="24" rx="8" fill="#2F333D"/>
   </g>
 
   <g filter="url(#smallShadow)">
-    <rect x="1138" y="489" width="118" height="71" rx="20" fill="#202229" stroke="#2D3038"/>
-    <rect x="1159" y="511" width="5" height="18" rx="2.5" fill="#F4F5F7"/>
-    <rect x="1168" y="505" width="5" height="24" rx="2.5" fill="#F4F5F7"/>
-    <rect x="1177" y="497" width="5" height="32" rx="2.5" fill="#F4F5F7"/>
-    <rect x="1198" y="508" width="34" height="8" rx="4" fill="#555A65"/>
-    <rect x="1198" y="527" width="44" height="8" rx="4" fill="#343842"/>
-  </g>
-
-  <g filter="url(#smallShadow)" opacity="0.86">
-    <rect x="1183" y="215" width="116" height="155" rx="24" fill="#202126" stroke="#2E3038"/>
-    <circle cx="1210" cy="258" r="2" fill="#FFFFFF"/>
-    <circle cx="1210" cy="282" r="2" fill="#FFFFFF"/>
-    <circle cx="1210" cy="306" r="2" fill="#FFFFFF"/>
-    <circle cx="1210" cy="330" r="2" fill="#FFFFFF"/>
-    <circle cx="1210" cy="354" r="2" fill="#FFFFFF"/>
+    <rect x="1138" y="492" width="96" height="108" rx="24" fill="#202229" stroke="#2D3038"/>
+    <rect x="1159" y="519" width="54" height="10" rx="5" fill="#F5F6F8"/>
+    <rect x="1159" y="543" width="38" height="8" rx="4" fill="#5A5E69"/>
+    <rect x="1159" y="563" width="48" height="8" rx="4" fill="#343842"/>
   </g>
 </svg>
