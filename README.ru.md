@@ -10,13 +10,14 @@
 | --- | --- | --- |
 | [Liquid Glass Tab Bars](https://github.com/mikonyaa/LiquidGlassTabBars) | Добавления нативного, плавающего или morphing tab bar в существующее приложение | `1.0.2` |
 | [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell) | Построения общей навигации с вкладками на iPhone, sidebar и inspector на iPad | `1.0.2` |
+| [Live Activity & Dynamic Island Kit](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) | Создания Live Activities и Dynamic Island-состояний для доставки, поездок, таймеров, спорта, загрузок и путешествий | `0.1.0` |
 
 ## Стандарт коллекции
 
 - Swift Package без сторонних runtime-зависимостей
 - Запускаемый Xcode demo-проект с локальными данными
 - Accessibility-поведение и fallback для поддерживаемых систем
-- Тесты, CI, документация, скриншоты, GIF и версионированные Releases
+- Тесты, CI, документация, реальные превью и версионированные Releases
 
 ## Как использовать
 

@@ -8,7 +8,7 @@
   <p>
     <a href="https://www.swift.org"><img alt="Swift 6" src="https://img.shields.io/badge/Swift-6.0-F05138?logo=swift&logoColor=white"></a>
     <a href="https://developer.apple.com/xcode/swiftui/"><img alt="SwiftUI" src="https://img.shields.io/badge/SwiftUI-Native-0A7AFF?logo=swift&logoColor=white"></a>
-    <a href="#featured-templates"><img alt="Live templates" src="https://img.shields.io/badge/Live_templates-2-0A7AFF"></a>
+    <a href="#featured-templates"><img alt="Live templates" src="https://img.shields.io/badge/Live_templates-3-0A7AFF"></a>
     <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-2EA44F"></a>
   </p>
   <p><a href="README.ru.md">Русская версия</a></p>
@@ -35,18 +35,24 @@ Apple Design Templates is a curated collection of independent SwiftUI starting p
 
 <table>
   <tr>
-    <th width="50%">Liquid Glass Tab Bars</th>
-    <th width="50%">Adaptive App Shell</th>
+    <th width="33%">Liquid Glass Tab Bars</th>
+    <th width="33%">Adaptive App Shell</th>
+    <th width="33%">Live Activity &amp; Dynamic Island Kit</th>
   </tr>
   <tr>
     <td align="center">
       <a href="https://github.com/mikonyaa/LiquidGlassTabBars">
-        <img src="Assets/liquid-glass-tab-bars.gif" width="300" height="653" alt="Liquid Glass Tab Bars animated preview">
+        <img src="Assets/liquid-glass-tab-bars.gif" width="250" height="544" alt="Liquid Glass Tab Bars animated preview">
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/mikonyaa/AdaptiveAppShell">
-        <img src="Assets/adaptive-app-shell.gif" width="300" height="653" alt="Adaptive App Shell animated preview">
+        <img src="Assets/adaptive-app-shell.gif" width="250" height="544" alt="Adaptive App Shell animated preview">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">
+        <img src="Assets/live-activity-dynamic-island-kit.png" width="250" height="544" alt="Live Activity and Dynamic Island Kit demo screenshot">
       </a>
     </td>
   </tr>
@@ -71,17 +77,27 @@ Apple Design Templates is a curated collection of independent SwiftUI starting p
       </ul>
       <p><strong><a href="https://github.com/mikonyaa/AdaptiveAppShell">Repository</a></strong> · <a href="https://github.com/mikonyaa/AdaptiveAppShell/releases/latest">Release</a> · <a href="https://github.com/mikonyaa/AdaptiveAppShell/tree/main/Docs">Documentation</a></p>
     </td>
+    <td valign="top">
+      <p><strong>Initial 0.1.0</strong> · iOS 17+ · Swift 6</p>
+      <p>ActivityKit recipes for polished Lock Screen and Dynamic Island experiences.</p>
+      <ul>
+        <li>Delivery, ride, timer, sports, download, and trip states</li>
+        <li>Lock Screen, compact, minimal, and expanded Dynamic Island surfaces</li>
+        <li>Real WidgetKit extension, local lifecycle controls, and optional XcodeGen</li>
+      </ul>
+      <p><strong><a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">Repository</a></strong> · <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit/releases/latest">Release</a> · <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs">Documentation</a></p>
+    </td>
   </tr>
 </table>
 
 ## Compare by need
 
-| Decision | Liquid Glass Tab Bars | Adaptive App Shell |
-| --- | --- | --- |
-| Best starting point | Adding a polished navigation control to an existing app | Establishing navigation for a new iPhone and iPad product |
-| Primary responsibility | Tab selection, presentation, and theming | App-wide destinations, navigation history, sidebar, and inspector |
-| Adaptive behavior | Three interchangeable tab-bar treatments | Compact tabs and regular-width split navigation |
-| Integration scope | Focused component package | Application-shell foundation |
+| Decision | Liquid Glass Tab Bars | Adaptive App Shell | Live Activity & Dynamic Island Kit |
+| --- | --- | --- | --- |
+| Best starting point | Adding a polished navigation control to an existing app | Establishing navigation for a new iPhone and iPad product | Designing system Live Activities for real product states |
+| Primary responsibility | Tab selection, presentation, and theming | App-wide destinations, navigation history, sidebar, and inspector | ActivityKit state, WidgetKit configuration, and glanceable system UI |
+| Adaptive behavior | Three interchangeable tab-bar treatments | Compact tabs and regular-width split navigation | Lock Screen plus compact, minimal, and expanded Dynamic Island surfaces |
+| Integration scope | Focused component package | Application-shell foundation | Swift Package, demo app, and WidgetKit extension template |
 
 ## What every template includes
 

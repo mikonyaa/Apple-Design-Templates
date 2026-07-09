@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#141416"/>
+      <stop offset="0.56" stop-color="#101113"/>
+      <stop offset="1" stop-color="#17181D"/>
+    </linearGradient>
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(356 320) rotate(90) scale(330 520)">
+      <stop stop-color="#2A2B33" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#111113" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(946 304) rotate(90) scale(260 360)">
+      <stop stop-color="#2C6DFF" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#2C6DFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="728" y1="62" x2="1178" y2="555" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D2E36" stop-opacity="0.94"/>
+      <stop offset="0.48" stop-color="#202126" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#15161A" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#2D3038"/>
+      <stop offset="1" stop-color="#191A1F"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F6B7FF" stop-opacity="0.72"/>
+      <stop offset="0.5" stop-color="#7BB7FF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#3A66FF" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="screenSheen" x1="842" y1="230" x2="1160" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF2FF" stop-opacity="0.16"/>
+      <stop offset="0.5" stop-color="#8793A8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#1F222A" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.30"/>
+    </filter>
+    <style>
+      .font { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif; }
+      .title { font-size: 60px; font-weight: 760; letter-spacing: -2.4px; }
+      .subtitle { font-size: 25px; font-weight: 560; letter-spacing: -0.45px; }
+      .tag { font-size: 17px; font-weight: 650; letter-spacing: 0.4px; }
+      .micro { font-size: 12px; font-weight: 650; letter-spacing: 1.8px; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#background)"/>
+  <rect width="1280" height="640" fill="url(#leftGlow)"/>
+  <rect width="1280" height="640" fill="url(#blueGlow)"/>
+
+  <g class="font">
+    <text x="72" y="296" fill="#FFFFFF" class="title">Apple Design Templates</text>
+    <text x="96" y="362" fill="#F3F3F4" class="subtitle">Premium SwiftUI templates for iOS, iPadOS &amp; macOS</text>
+    <text x="268" y="410" fill="#D6D6DA" class="tag">SwiftUI  ·  iOS  ·  iPadOS  ·  macOS</text>
+  </g>
+
+  <g opacity="0.18">
+    <path d="M682 76H1204" stroke="#6C6F7A" stroke-width="1"/>
+    <path d="M670 564H1188" stroke="#353741" stroke-width="1"/>
+  </g>
+
+  <g filter="url(#smallShadow)" opacity="0.9">
+    <rect x="758" y="67" width="132" height="58" rx="15" fill="#202126" stroke="#30323A"/>
+    <rect x="771" y="81" width="32" height="5" rx="2.5" fill="#636773"/>
+    <rect x="807" y="81" width="78" height="5" rx="2.5" fill="#343742"/>
+    <rect x="771" y="99" width="86" height="7" rx="3.5" fill="#2B2E37"/>
+    <rect x="865" y="97" width="16" height="12" rx="4" fill="#3F4350"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="914" y="63" width="154" height="120" rx="19" fill="#23242B" stroke="#2E3038"/>
+    <path d="M966 125L1018 73" stroke="#5F6370" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+    <path d="M983 125L1035 73" stroke="#5F6370" stroke-width="2" stroke-linecap="round" opacity="0.42"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="1090" y="63" width="126" height="120" rx="18" fill="#24252C" stroke="#30323B"/>
+    <rect x="1136" y="106" width="15" height="15" rx="4" fill="#F9FAFB"/>
+    <rect x="1156" y="106" width="15" height="15" rx="4" fill="#F9FAFB"/>
+    <rect x="1136" y="128" width="15" height="15" rx="4" fill="#F9FAFB"/>
+    <rect x="1156" y="128" width="15" height="15" rx="4" fill="#F9FAFB"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="731" y="214" width="132" height="244" rx="25" fill="#111214" stroke="#282A31" stroke-width="2.5"/>
+    <rect x="782" y="224" width="30" height="7" rx="3.5" fill="#2A2B32"/>
+    <rect x="772" y="369" width="50" height="12" rx="6" fill="#FFFFFF" opacity="0.08"/>
+    <rect x="763" y="393" width="70" height="18" rx="9" fill="#1D1F26"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="884" y="214" width="322" height="244" rx="27" fill="url(#glass)" stroke="#565A66" stroke-width="1.3"/>
+    <rect x="884" y="214" width="322" height="34" rx="17" fill="#353944" opacity="0.98"/>
+    <circle cx="903" cy="231" r="4" fill="#A7B4C8"/>
+    <circle cx="918" cy="231" r="4" fill="#8792A3"/>
+    <circle cx="933" cy="231" r="4" fill="#6D7685"/>
+    <rect x="884" y="248" width="322" height="210" rx="0" fill="url(#screenSheen)" opacity="0.74"/>
+    <rect x="918" y="292" width="92" height="78" rx="20" fill="#14161B" opacity="0.55"/>
+    <rect x="1028" y="292" width="124" height="28" rx="14" fill="#FFFFFF" opacity="0.14"/>
+    <rect x="1028" y="332" width="96" height="10" rx="5" fill="#FFFFFF" opacity="0.2"/>
+    <rect x="1028" y="354" width="150" height="14" rx="7" fill="#111318" opacity="0.38"/>
+    <rect x="918" y="391" width="260" height="16" rx="8" fill="#111318" opacity="0.38"/>
+    <rect x="918" y="391" width="164" height="16" rx="8" fill="#0A84FF"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="819" y="492" width="148" height="32" rx="16" fill="#22242B" stroke="#2F323B"/>
+    <circle cx="846" cy="508" r="5" fill="#F4F5F7"/>
+    <rect x="880" y="502" width="58" height="12" rx="6" fill="#3B3E48"/>
+    <rect x="819" y="529" width="148" height="32" rx="16" fill="#1C1E24" stroke="#292C34"/>
+    <rect x="843" y="539" width="13" height="13" rx="3" stroke="#F4F5F7" stroke-width="1.5"/>
+    <rect x="880" y="539" width="70" height="12" rx="6" fill="#343741"/>
+    <rect x="819" y="566" width="148" height="32" rx="16" fill="#202229" stroke="#2C2F37"/>
+    <rect x="843" y="576" width="13" height="13" rx="3" stroke="#F4F5F7" stroke-width="1.5"/>
+    <rect x="880" y="576" width="54" height="12" rx="6" fill="#363944"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="997" y="489" width="118" height="71" rx="20" fill="#202229" stroke="#2D3038"/>
+    <rect x="1016" y="508" width="16" height="16" rx="4" fill="#F9FAFB"/>
+    <rect x="1041" y="508" width="47" height="8" rx="4" fill="#565A65"/>
+    <rect x="1016" y="532" width="16" height="16" rx="4" fill="#555A66"/>
+    <rect x="1041" y="532" width="55" height="8" rx="4" fill="#343842"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="1138" y="489" width="118" height="71" rx="20" fill="#202229" stroke="#2D3038"/>
+    <rect x="1159" y="511" width="5" height="18" rx="2.5" fill="#F4F5F7"/>
+    <rect x="1168" y="505" width="5" height="24" rx="2.5" fill="#F4F5F7"/>
+    <rect x="1177" y="497" width="5" height="32" rx="2.5" fill="#F4F5F7"/>
+    <rect x="1198" y="508" width="34" height="8" rx="4" fill="#555A65"/>
+    <rect x="1198" y="527" width="44" height="8" rx="4" fill="#343842"/>
+  </g>
+
+  <g filter="url(#smallShadow)" opacity="0.86">
+    <rect x="1183" y="215" width="116" height="155" rx="24" fill="#202126" stroke="#2E3038"/>
+    <circle cx="1210" cy="258" r="2" fill="#FFFFFF"/>
+    <circle cx="1210" cy="282" r="2" fill="#FFFFFF"/>
+    <circle cx="1210" cy="306" r="2" fill="#FFFFFF"/>
+    <circle cx="1210" cy="330" r="2" fill="#FFFFFF"/>
+    <circle cx="1210" cy="354" r="2" fill="#FFFFFF"/>
+  </g>
+</svg>
