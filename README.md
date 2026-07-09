@@ -99,7 +99,7 @@ Apple Design Templates is a curated collection of independent SwiftUI starting p
       <ul>
         <li>MenuBarExtra dashboard, main window, command palette, and Settings</li>
         <li>Metadata-first command registry with local demo data</li>
-        <li>Launch at Login service, keyboard shortcuts, and Codex run script</li>
+        <li>Launch at Login service, keyboard shortcuts, and local run script</li>
       </ul>
       <p><strong><a href="https://github.com/mikonyaa/MacMenuBarCommandKit">Repository</a></strong> · <a href="https://github.com/mikonyaa/MacMenuBarCommandKit/releases/latest">Release</a> · <a href="https://github.com/mikonyaa/MacMenuBarCommandKit/tree/main/Docs">Documentation</a></p>
     </td>
@@ -113,7 +113,7 @@ Apple Design Templates is a curated collection of independent SwiftUI starting p
 | Best starting point | Adding a polished navigation control to an existing app | Establishing navigation for a new iPhone and iPad product | Designing system Live Activities for real product states | Starting a Mac menu bar utility with commands and settings |
 | Primary responsibility | Tab selection, presentation, and theming | App-wide destinations, navigation history, sidebar, and inspector | ActivityKit state, WidgetKit configuration, and glanceable system UI | MenuBarExtra, command registry, command palette, Settings, and Launch at Login |
 | Adaptive behavior | Three interchangeable tab-bar treatments | Compact tabs and regular-width split navigation | Lock Screen plus compact, minimal, and expanded Dynamic Island surfaces | Menu bar dashboard plus regular Dock-visible main window |
-| Integration scope | Focused component package | Application-shell foundation | Swift Package, demo app, and WidgetKit extension template | Swift Package, macOS demo app, docs, tests, and Codex run script |
+| Integration scope | Focused component package | Application-shell foundation | Swift Package, demo app, and WidgetKit extension template | Swift Package, macOS demo app, docs, tests, and local run script |
 
 ## What every template includes
 
