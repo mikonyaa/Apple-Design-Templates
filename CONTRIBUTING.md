@@ -4,7 +4,11 @@ Thank you for helping improve Apple Design Templates.
 
 ## Where to open an issue
 
-- Report component bugs and integration questions in the affected template repository.
+- Report component bugs and integration questions in the affected template repository:
+  [Liquid Glass Tab Bars](https://github.com/mikonyaa/LiquidGlassTabBars/issues/new/choose),
+  [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell/issues/new/choose),
+  [Live Activity & Dynamic Island Kit](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/issues/new/choose), or
+  [Mac Menu Bar Command Kit](https://github.com/mikonyaa/MacMenuBarCommandKit/issues/new/choose).
 - Use this catalog for collection structure, documentation shared by all templates, and proposals for a new standalone template.
 - Report security concerns through the private process described in [SECURITY.md](SECURITY.md).
 

@@ -16,7 +16,7 @@
 
 ---
 
-Apple Design Templates is a curated collection of independent SwiftUI starting points. It is intentionally a catalog rather than a monorepo: every template has its own focused source, demo, documentation, issues, CI, and releases.
+Apple Design Templates is a curated collection of independent SwiftUI starting points. It is intentionally a catalog rather than a monorepo: every template has its own focused source, demo, documentation, issues, and CI. Published templates also carry versioned releases.
 
 <table>
   <tr>
@@ -84,14 +84,14 @@ Apple Design Templates is a curated collection of independent SwiftUI starting p
       <p><strong><a href="https://github.com/mikonyaa/AdaptiveAppShell">Repository</a></strong> · <a href="https://github.com/mikonyaa/AdaptiveAppShell/releases/latest">Release</a> · <a href="https://github.com/mikonyaa/AdaptiveAppShell/tree/main/Docs">Documentation</a></p>
     </td>
     <td valign="top">
-      <p><strong>Initial 0.1.0</strong> · iOS 17+ · Swift 6</p>
+      <p><strong>Preview · Unreleased</strong> · iOS 17+ · Swift 6</p>
       <p>ActivityKit recipes for polished Lock Screen and Dynamic Island experiences.</p>
       <ul>
         <li>Delivery, ride, timer, sports, download, and trip states</li>
         <li>Lock Screen, compact, minimal, and expanded Dynamic Island surfaces</li>
         <li>Real WidgetKit extension, local lifecycle controls, and optional XcodeGen</li>
       </ul>
-      <p><strong><a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">Repository</a></strong> · <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit/releases/latest">Release</a> · <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs">Documentation</a></p>
+      <p><strong><a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">Repository</a></strong> · <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs">Documentation</a></p>
     </td>
     <td valign="top">
       <p><strong>Initial 0.1.0</strong> · macOS 14+ · Swift 6</p>
@@ -122,7 +122,7 @@ Apple Design Templates is a curated collection of independent SwiftUI starting p
 | Reusable source | A focused Swift Package with no third-party runtime dependencies |
 | Working example | A runnable Xcode project using deterministic local data |
 | Platform behavior | Accessibility considerations and practical fallbacks for supported systems |
-| Verification | Unit tests, GitHub Actions, semantic versions, and a changelog |
+| Verification | Unit tests, GitHub Actions, a changelog, and a tagged release for published templates |
 | Learning material | Architecture, integration, customization, accessibility, and beginner guidance |
 | Honest previews | Screenshots and motion captured from the real demo rather than concept renders |
 
@@ -146,9 +146,9 @@ Apple Design Templates is a curated collection of independent SwiftUI starting p
 - **Native behavior over imitation.** Platform conventions remain intact unless a custom interaction earns its complexity.
 - **Clarity over decoration.** Hierarchy, spacing, contrast, and motion must support the content rather than compete with it.
 - **Adaptation over rigid screens.** Components expose semantic configuration and layouts respond to their environment.
-- **Finished systems over unfinished libraries.** A small template is listed only when its code, demo, docs, tests, release, and preview agree.
+- **Finished systems over unfinished libraries.** A template is marked stable only when its code, demo, docs, tests, release, and preview agree. Earlier entries stay explicitly labeled as previews.
 
-> New templates appear here only after they are runnable, documented, tested, and ready to adapt. The catalog does not use fictional projects or placeholder previews to look larger than it is.
+> New templates remain labeled as previews until they are runnable, documented, tested, and ready to adapt. The catalog does not use fictional projects or placeholder previews to look larger than it is.
 
 Detailed implementation guidance belongs in the relevant template repository. Collection-level proposals are welcome through [Issues](https://github.com/mikonyaa/Apple-Design-Templates/issues) after reviewing [CONTRIBUTING.md](CONTRIBUTING.md).
 

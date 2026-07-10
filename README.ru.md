@@ -1,6 +1,6 @@
 # Apple Design Templates
 
-Профессиональная витрина независимых SwiftUI-шаблонов для Apple-платформ. Каждый проект содержит переиспользуемый код, запускаемый Xcode demo-проект, документацию, тесты и собственные Releases.
+Профессиональная витрина независимых SwiftUI-шаблонов для Apple-платформ. Каждый проект содержит переиспользуемый код, запускаемый Xcode demo-проект, документацию и тесты. Опубликованные шаблоны дополнительно получают версионированные Releases.
 
 Главный репозиторий остаётся каталогом. Исходный код и подробные инструкции находятся в отдельных репозиториях, поэтому проекты удобно изучать, подключать и развивать независимо.
 
@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | [Liquid Glass Tab Bars](https://github.com/mikonyaa/LiquidGlassTabBars) | Добавления нативного, плавающего или morphing tab bar в существующее приложение | `1.0.2` |
 | [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell) | Построения общей навигации с вкладками на iPhone, sidebar и inspector на iPad | `1.0.2` |
-| [Live Activity & Dynamic Island Kit](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) | Создания Live Activities и Dynamic Island-состояний для доставки, поездок, таймеров, спорта, загрузок и путешествий | `0.1.0` |
+| [Live Activity & Dynamic Island Kit](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) | Создания Live Activities и Dynamic Island-состояний для доставки, поездок, таймеров, спорта, загрузок и путешествий | Preview |
 | [Mac Menu Bar Command Kit](https://github.com/mikonyaa/MacMenuBarCommandKit) | Создания macOS menu bar утилиты с command palette, Settings, Launch at Login, clipboard-сценариями и 8 локальными demo-командами | `0.1.0` |
 
 ## Стандарт коллекции
@@ -18,7 +18,7 @@
 - Swift Package без сторонних runtime-зависимостей
 - Запускаемый Xcode demo-проект с локальными данными
 - Accessibility-поведение и fallback для поддерживаемых систем
-- Тесты, CI, документация, реальные превью и версионированные Releases
+- Тесты, CI, документация и реальные превью; для опубликованных шаблонов — версионированные Releases
 
 ## Как использовать
 

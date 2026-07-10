@@ -4,5 +4,7 @@ This catalog contains documentation and preview media only. Report a vulnerabili
 
 - [Liquid Glass Tab Bars security advisories](https://github.com/mikonyaa/LiquidGlassTabBars/security/advisories/new)
 - [Adaptive App Shell security advisories](https://github.com/mikonyaa/AdaptiveAppShell/security/advisories/new)
+- [Live Activity & Dynamic Island Kit security advisories](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/security/advisories/new)
+- [Mac Menu Bar Command Kit security advisories](https://github.com/mikonyaa/MacMenuBarCommandKit/security/advisories/new)
 
 Do not publish suspected vulnerabilities in a public issue.

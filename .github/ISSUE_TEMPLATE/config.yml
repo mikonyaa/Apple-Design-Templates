@@ -6,3 +6,9 @@ contact_links:
   - name: Adaptive App Shell issues
     url: https://github.com/mikonyaa/AdaptiveAppShell/issues/new/choose
     about: Report app shell bugs and integration questions here.
+  - name: Live Activity & Dynamic Island Kit issues
+    url: https://github.com/mikonyaa/LiveActivityDynamicIslandKit/issues/new/choose
+    about: Report Live Activity, Dynamic Island, and integration questions here.
+  - name: Mac Menu Bar Command Kit issues
+    url: https://github.com/mikonyaa/MacMenuBarCommandKit/issues/new/choose
+    about: Report menu bar, command palette, and integration questions here.
