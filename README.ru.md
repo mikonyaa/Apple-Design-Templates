@@ -6,7 +6,7 @@
 
 ### Liquid Glass Tab Bars
 
-**Stable 1.0.2 · iOS 17+ · Swift 6**
+**Stable 1.0.3 · iOS 17+ · Swift 6**
 
 Нативный, floating и morphing tab bar для существующего приложения. Custom-варианты рассчитаны на 2–5 основных разделов; для большего количества используется системный `TabView`.
 
@@ -14,7 +14,7 @@
 
 ### Adaptive App Shell
 
-**Stable 1.0.2 · iOS 17+ · Swift 6**
+**Stable 1.0.3 · iOS 17+ · Swift 6**
 
 Общая навигационная модель: bottom tabs на iPhone, sidebar и опциональный inspector на iPad, независимые route paths и enum-based deep links.
 
@@ -30,7 +30,7 @@ Domain-neutral rendering core для Lock Screen и Dynamic Island с полно
 
 ### Mac Menu Bar Command Kit
 
-**Published 0.1.0 · macOS 14+ · Swift 6**
+**Published 0.2.0 · macOS 14+ · Swift 6**
 
 Keyboard-first shell для menu bar утилит: `MenuBarExtra`, обычное окно, command palette, Settings, Launch at Login и реальные clipboard workflows.
 

@@ -33,7 +33,7 @@ The collection follows three rules:
 
 ## 01 / Liquid Glass Tab Bars
 
-> **Stable 1.0.2** · iOS 17+ · Swift 6 · Native iOS 26 Liquid Glass
+> **Stable 1.0.3** · iOS 17+ · Swift 6 · Native iOS 26 Liquid Glass
 
 Three tab-bar approaches built around one reusable selection model: system, floating, and morphing.
 
@@ -53,7 +53,7 @@ Three tab-bar approaches built around one reusable selection model: system, floa
 
 ## 02 / Adaptive App Shell
 
-> **Stable 1.0.2** · iOS 17+ · Swift 6 · iPhone and iPad
+> **Stable 1.0.3** · iOS 17+ · Swift 6 · iPhone and iPad
 
 One navigation state model that moves cleanly between compact bottom tabs and a regular-width sidebar workspace.
 
@@ -93,7 +93,7 @@ A small, domain-neutral rendering core for glanceable Live Activity surfaces, pa
 
 ## 04 / Mac Menu Bar Command Kit
 
-> **Published 0.1.0** · macOS 14+ · Swift 6 · Native SwiftUI scenes
+> **Published 0.2.0** · macOS 14+ · Swift 6 · Native SwiftUI scenes
 
 A keyboard-first menu bar command shell for timers, clipboard workflows, notes, system tools, and focused productivity utilities.
 
