@@ -73,9 +73,9 @@ One navigation state model that moves cleanly between compact bottom tabs and a 
 
 ## 03 / Live Activity & Dynamic Island Kit
 
-> **Preview · Unreleased** · iOS 17+ · Swift 6 · Physical-device release gate pending
+> **Released 0.1.0** · iOS 17+ · Swift 6 · Xcode 16.4+
 
-A small, domain-neutral rendering core for glanceable Live Activity surfaces, paired with an app-specific ActivityKit and WidgetKit demo.
+A small, domain-neutral rendering core for glanceable Live Activity surfaces, paired with a polished Activity Lab and app-owned ActivityKit lifecycle.
 
 <p align="center">
   <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">
@@ -85,9 +85,10 @@ A small, domain-neutral rendering core for glanceable Live Activity surfaces, pa
 
 - Covers Lock Screen plus compact, minimal, and expanded Dynamic Island surfaces.
 - Demonstrates delivery, ride, timer, sports, transfer, and trip states without putting those domains in the package API.
-- Includes local start, update, end, deep-link, accessibility, and timeline-snapshot examples.
+- Includes start, update, relaunch recovery, exact deep links, end, accessibility, and safe timeline examples.
+- Supports adaptive Porcelain styling plus app-defined light and dark appearance palettes.
 
-**[Open repository](https://github.com/mikonyaa/LiveActivityDynamicIslandKit)** · [Documentation](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs)
+**[Open repository](https://github.com/mikonyaa/LiveActivityDynamicIslandKit)** · [Latest release](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/releases/latest) · [Documentation](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs)
 
 ---
 

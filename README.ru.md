@@ -22,11 +22,11 @@
 
 ### Live Activity & Dynamic Island Kit
 
-**Preview · Unreleased · iOS 17+ · Swift 6**
+**Released 0.1.0 · iOS 17+ · Swift 6 · Xcode 16.4+**
 
-Domain-neutral rendering core для Lock Screen и Dynamic Island с полноценным app-specific ActivityKit/WidgetKit demo. Первый release остаётся заблокирован до проверки start/update/end на физическом устройстве.
+Domain-neutral rendering core для Lock Screen и Dynamic Island с polished Activity Lab, app-owned lifecycle, recovery после relaunch, exact deep links и light/dark appearance palettes.
 
-[Репозиторий](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) · [Документация](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs)
+[Репозиторий](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) · [Release](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/releases/latest) · [Документация](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs)
 
 ### Mac Menu Bar Command Kit
 
