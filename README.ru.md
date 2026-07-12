@@ -1,31 +1,57 @@
 # Apple Design Templates
 
-Профессиональная витрина независимых SwiftUI-шаблонов для Apple-платформ. Каждый проект содержит переиспользуемый код, запускаемый Xcode demo-проект, документацию и тесты. Опубликованные шаблоны дополнительно получают версионированные Releases.
+Профессиональная витрина независимых SwiftUI-шаблонов для Apple-платформ. Это каталог, а не monorepo: у каждого проекта есть отдельный package, запускаемый Xcode demo, документация, тесты, issues, CI и собственная история релизов.
 
-Главный репозиторий остаётся каталогом. Исходный код и подробные инструкции находятся в отдельных репозиториях, поэтому проекты удобно изучать, подключать и развивать независимо.
+## Коллекция
 
-## Доступные шаблоны
+### Liquid Glass Tab Bars
 
-| Проект | Лучше всего подходит для | Версия |
-| --- | --- | --- |
-| [Liquid Glass Tab Bars](https://github.com/mikonyaa/LiquidGlassTabBars) | Добавления нативного, плавающего или morphing tab bar в существующее приложение | `1.0.2` |
-| [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell) | Построения общей навигации с вкладками на iPhone, sidebar и inspector на iPad | `1.0.2` |
-| [Live Activity & Dynamic Island Kit](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) | Создания Live Activities и Dynamic Island-состояний для доставки, поездок, таймеров, спорта, загрузок и путешествий | Preview |
-| [Mac Menu Bar Command Kit](https://github.com/mikonyaa/MacMenuBarCommandKit) | Создания macOS menu bar утилиты с command palette, Settings, Launch at Login, clipboard-сценариями и 8 локальными demo-командами | `0.1.0` |
+**Stable 1.0.2 · iOS 17+ · Swift 6**
+
+Нативный, floating и morphing tab bar для существующего приложения. Custom-варианты рассчитаны на 2–5 основных разделов; для большего количества используется системный `TabView`.
+
+[Репозиторий](https://github.com/mikonyaa/LiquidGlassTabBars) · [Release](https://github.com/mikonyaa/LiquidGlassTabBars/releases/latest) · [Документация](https://github.com/mikonyaa/LiquidGlassTabBars/tree/main/Docs)
+
+### Adaptive App Shell
+
+**Stable 1.0.2 · iOS 17+ · Swift 6**
+
+Общая навигационная модель: bottom tabs на iPhone, sidebar и опциональный inspector на iPad, независимые route paths и enum-based deep links.
+
+[Репозиторий](https://github.com/mikonyaa/AdaptiveAppShell) · [Release](https://github.com/mikonyaa/AdaptiveAppShell/releases/latest) · [Документация](https://github.com/mikonyaa/AdaptiveAppShell/tree/main/Docs)
+
+### Live Activity & Dynamic Island Kit
+
+**Preview · Unreleased · iOS 17+ · Swift 6**
+
+Domain-neutral rendering core для Lock Screen и Dynamic Island с полноценным app-specific ActivityKit/WidgetKit demo. Первый release остаётся заблокирован до проверки start/update/end на физическом устройстве.
+
+[Репозиторий](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) · [Документация](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs)
+
+### Mac Menu Bar Command Kit
+
+**Published 0.1.0 · macOS 14+ · Swift 6**
+
+Keyboard-first shell для menu bar утилит: `MenuBarExtra`, обычное окно, command palette, Settings, Launch at Login и реальные clipboard workflows.
+
+[Репозиторий](https://github.com/mikonyaa/MacMenuBarCommandKit) · [Release](https://github.com/mikonyaa/MacMenuBarCommandKit/releases/latest) · [Документация](https://github.com/mikonyaa/MacMenuBarCommandKit/tree/main/Docs)
+
+## Как выбрать
+
+- Нужен tab bar в существующем приложении — **Liquid Glass Tab Bars**.
+- Нужна навигационная основа нового iPhone/iPad продукта — **Adaptive App Shell**.
+- Нужен glanceable status вне приложения — **Live Activity & Dynamic Island Kit**.
+- Нужна сфокусированная Mac menu bar утилита — **Mac Menu Bar Command Kit**.
 
 ## Стандарт коллекции
 
-- Swift Package без сторонних runtime-зависимостей
-- Запускаемый Xcode demo-проект с локальными данными
-- Accessibility-поведение и fallback для поддерживаемых систем
-- Тесты, CI, документация и реальные превью; для опубликованных шаблонов — версионированные Releases
+- Swift Package без сторонних runtime-зависимостей.
+- Запускаемый Xcode demo-проект с deterministic local data.
+- Accessibility-поведение и практичные fallbacks.
+- Tests, CI, changelog и честная release-история.
+- Архитектурная, integration и customization документация.
+- Превью из реального demo, без fictional mockups.
 
-## Как использовать
-
-1. Выберите минимальный шаблон под свою задачу.
-2. Откройте его репозиторий, запустите demo и прочитайте документацию.
-3. Подключите Swift Package или адаптируйте нужный код под свой продукт.
-
-Новые проекты появляются в каталоге только после полной проверки. Фиктивные шаблоны и placeholder-превью не используются.
+Новые проекты появляются в каталоге только после полной проверки. Реализация и подробные инструкции остаются в соответствующих репозиториях.
 
 **[Открыть основную визуальную витрину](README.md)**
