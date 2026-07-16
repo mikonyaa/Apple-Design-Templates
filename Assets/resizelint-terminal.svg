@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title description">
+  <title id="title">ResizeLint terminal report</title>
+  <desc id="description">A focused dark terminal shows a local ResizeLint command, one RL001 error, its remediation, and an analysis summary.</desc>
+  <defs>
+    <linearGradient id="canvas" x1="70" y1="16" x2="1130" y2="668" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080D16"/>
+      <stop offset="1" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="42" x2="0" y2="638" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D121B"/>
+      <stop offset="1" stop-color="#090C13"/>
+    </linearGradient>
+    <filter id="shadow" x="-12%" y="-16%" width="124%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000" flood-opacity=".42"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="680" fill="url(#canvas)"/>
+  <g filter="url(#shadow)">
+    <rect x="48" y="42" width="1104" height="596" rx="22" fill="url(#terminal)" stroke="#252D3B" stroke-width="2"/>
+  </g>
+  <path d="M48 98h1104" stroke="#222A37"/>
+
+  <g fill="#697386">
+    <circle cx="78" cy="70" r="5"/>
+    <circle cx="96" cy="70" r="5"/>
+    <circle cx="114" cy="70" r="5"/>
+  </g>
+  <text x="600" y="76" text-anchor="middle" fill="#707B8D" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">~/project</text>
+  <text x="1116" y="76" text-anchor="end" fill="#596476" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">zsh</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+    <text x="88" y="154" fill="#64D5A6" font-size="19">❯</text>
+    <text x="118" y="154" fill="#EEECE6" font-size="19">resizelint lint . --strict</text>
+
+    <path d="M89 207v139" stroke="#FF7D74" stroke-width="2"/>
+    <text x="112" y="226" fill="#98A4B6" font-size="17">Sources/GalleryView.swift:42:21</text>
+    <text x="487" y="226" fill="#FF8A82" font-size="17" font-weight="700">error</text>
+    <text x="556" y="226" fill="#83B9FF" font-size="17" font-weight="700">RL001</text>
+
+    <text x="112" y="283" fill="#EEECE6" font-size="19">UIScreen.main bounds do not describe the current scene's</text>
+    <text x="112" y="319" fill="#EEECE6" font-size="19">available space; use view bounds or scene-local geometry.</text>
+
+    <text x="112" y="381" fill="#6D9FD5" font-size="16">github.com/mikonyaa/ResizeLint/blob/v1/Docs/Rules/RL001.md</text>
+
+    <path d="M88 444h1024" stroke="#232B38"/>
+    <text x="88" y="493" fill="#FF8A82" font-size="16" font-weight="700">1 error</text>
+    <text x="191" y="493" fill="#64D5A6" font-size="16">18 files</text>
+    <text x="299" y="493" fill="#7D899B" font-size="16">analyzed in 0.34s</text>
+
+    <text x="88" y="581" fill="#64D5A6" font-size="19">❯</text>
+    <rect x="118" y="562" width="10" height="24" rx="2" fill="#EEECE6" opacity=".9"/>
+  </g>
+</svg>
