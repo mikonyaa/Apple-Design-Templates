@@ -1,188 +1,210 @@
 <div align="center">
-  <a href="#the-collection"><img src="Assets/banner.png" alt="Apple Design Templates by miko.os" width="100%"></a>
-  <br><br>
+  <a href="#choose-by-outcome"><img src="Assets/banner.png" alt="Apple Design Templates by miko.os" width="100%"></a>
   <h1>Apple Design Templates</h1>
-  <p><strong>Focused SwiftUI foundations for real Apple-platform products.</strong></p>
-  <p>Open a complete demo. Understand the architecture. Adapt only what your product needs.</p>
-  <p>Curated by <a href="https://github.com/mikonyaa"><strong>miko.os</strong></a></p>
-  <p>
-    <a href="https://www.swift.org"><img alt="Swift 6" src="https://img.shields.io/badge/Swift-6.0-F05138?logo=swift&logoColor=white"></a>
-    <a href="https://developer.apple.com/xcode/swiftui/"><img alt="SwiftUI" src="https://img.shields.io/badge/SwiftUI-Native-0A7AFF?logo=swift&logoColor=white"></a>
-    <a href="#the-collection"><img alt="Four focused templates and one developer tool" src="https://img.shields.io/badge/Collection-4_templates_%2B_1_tool-0A7AFF"></a>
-    <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-2EA44F"></a>
-  </p>
+  <p><strong>Focused SwiftUI starting points for Apple-platform products.</strong></p>
+  <p>Choose a project. Inspect its demo and limitations. Adapt only what you need.</p>
+  <p>Curated by <a href="https://github.com/mikonyaa"><strong>miko.os</strong></a> · <a href="LICENSE">MIT</a></p>
   <p><a href="README.ru.md">Русская версия</a></p>
 </div>
 
----
+Four independent SwiftUI templates and one developer tool. Each project owns its implementation, documentation, issues, tests, and release history.
 
-Apple Design Templates is a public catalog of independent SwiftUI starting points and focused Apple-platform tooling—not a monorepo and not a speculative component dump. Every project owns its source, runnable evidence, documentation, tests, issues, CI, and release history.
-
-The collection follows three rules:
-
-- **Native first.** System APIs and Apple-platform conventions are the baseline.
-- **Runnable by default.** Demos use deterministic local data and require no account or backend.
-- **Small enough to adapt.** Each package solves one recognizable product problem without becoming a framework for hypothetical needs.
-
-## The collection
-
-- **Liquid Glass Tab Bars** — a focused navigation component for an existing iOS app.
-- **Adaptive App Shell** — an application shell that scales from iPhone tabs to an iPad workspace.
-- **Live Activity & Dynamic Island Kit** — reusable system-surface rendering with a complete ActivityKit demo.
-- **Mac Menu Bar Command Kit** — a native command shell for focused macOS utilities.
-
-The catalog also includes **ResizeLint**, a developer tool for finding Swift layout assumptions that fail when an iPhone app runs in a resizable window. It is intentionally presented outside the numbered template collection.
-
-## 01 / Liquid Glass Tab Bars
-
-> **Stable 1.0.3** · iOS 17+ · Swift 6 · Native iOS 26 Liquid Glass
-
-Three tab-bar approaches built around one reusable selection model: system, floating, and morphing.
-
-<p align="center">
-  <a href="https://github.com/mikonyaa/LiquidGlassTabBars">
-    <img src="Assets/liquid-glass-tab-bars.gif" width="320" alt="Liquid Glass Tab Bars animated demo">
-  </a>
-</p>
-
-- Uses the system `TabView` when platform behavior is the right answer.
-- Provides focused custom variants for two to five primary destinations.
-- Respects Dynamic Type, Reduce Motion, and Reduce Transparency with practical iOS 17–25 fallbacks.
-
-**[Open repository](https://github.com/mikonyaa/LiquidGlassTabBars)** · [Latest release](https://github.com/mikonyaa/LiquidGlassTabBars/releases/latest) · [Documentation](https://github.com/mikonyaa/LiquidGlassTabBars/tree/main/Docs)
-
----
-
-## 02 / Adaptive App Shell
-
-> **Stable 1.0.3** · iOS 17+ · Swift 6 · iPhone and iPad
-
-One navigation state model that moves cleanly between compact bottom tabs and a regular-width sidebar workspace.
-
-<p align="center">
-  <a href="https://github.com/mikonyaa/AdaptiveAppShell">
-    <img src="Assets/adaptive-app-shell.gif" width="320" alt="Adaptive App Shell animated demo">
-  </a>
-</p>
-
-- Preserves an independent navigation path for every destination.
-- Supports sidebar-only collections, enum-based deep links, and an optional contextual inspector.
-- Ships three restrained semantic themes with opaque content surfaces and guarded system glass.
-
-**[Open repository](https://github.com/mikonyaa/AdaptiveAppShell)** · [Latest release](https://github.com/mikonyaa/AdaptiveAppShell/releases/latest) · [Documentation](https://github.com/mikonyaa/AdaptiveAppShell/tree/main/Docs)
-
----
-
-## 03 / Live Activity & Dynamic Island Kit
-
-> **Released 0.1.0** · iOS 17+ · Swift 6 · Xcode 16.4+
-
-A small, domain-neutral rendering core for glanceable Live Activity surfaces, paired with a polished Activity Lab and app-owned ActivityKit lifecycle.
-
-<p align="center">
-  <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">
-    <img src="Assets/live-activity-dynamic-island-kit.png" width="360" alt="Live Activity and Dynamic Island Kit demo screenshot">
-  </a>
-</p>
-
-- Covers Lock Screen plus compact, minimal, and expanded Dynamic Island surfaces.
-- Demonstrates delivery, ride, timer, sports, transfer, and trip states without putting those domains in the package API.
-- Includes start, update, relaunch recovery, exact deep links, end, accessibility, and safe timeline examples.
-- Supports adaptive Porcelain styling plus app-defined light and dark appearance palettes.
-
-**[Open repository](https://github.com/mikonyaa/LiveActivityDynamicIslandKit)** · [Latest release](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/releases/latest) · [Documentation](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/main/Docs)
-
----
-
-## 04 / Mac Menu Bar Command Kit
-
-> **Published 0.2.0** · macOS 14+ · Swift 6 · Native SwiftUI scenes
-
-A keyboard-first menu bar command shell for timers, clipboard workflows, notes, system tools, and focused productivity utilities.
-
-<p align="center">
-  <a href="https://github.com/mikonyaa/MacMenuBarCommandKit">
-    <img src="Assets/mac-menu-bar-command-kit.png" width="760" alt="Mac Menu Bar Command Kit dashboard screenshot">
-  </a>
-</p>
-
-- Combines `MenuBarExtra`, a regular main window, command palette, Settings, and Launch at Login.
-- Keeps command metadata separate from app-owned behavior and platform side effects.
-- Demonstrates real pasteboard input/output, keyboard shortcuts, local state, and visible execution results.
-
-**[Open repository](https://github.com/mikonyaa/MacMenuBarCommandKit)** · [Latest release](https://github.com/mikonyaa/MacMenuBarCommandKit/releases/latest) · [Documentation](https://github.com/mikonyaa/MacMenuBarCommandKit/tree/main/Docs)
-
----
-
-## Developer tool / ResizeLint
-
-> **Stable 1.0.0** · macOS 14+ and Ubuntu 22.04+ · Swift 6 · CLI and GitHub Action
-
-Deterministic local static analysis for the UIKit and Swift layout assumptions that break when an iPhone app no longer owns the full physical display.
-
-<p align="center">
-  <a href="https://github.com/mikonyaa/ResizeLint">
-    <img src="Assets/resizelint-terminal.svg" width="760" alt="ResizeLint reporting an RL001 scene-local geometry issue in a dark terminal">
-  </a>
-</p>
-
-- Covers nine high-confidence rules for global screen geometry, scene lifecycle, device idiom, orientation, and adaptive layout decisions.
-- Keeps source local and emits deterministic human, Xcode, JSON, and SARIF reports without an account, daemon, telemetry, or cloud service.
-- Ships a checksum-verifying `mikonyaa/ResizeLint@v1` Action plus signed and notarized universal macOS artifacts and a Linux x86_64 binary.
-
-Install the notarized macOS package from the verified `1.0.0` release:
-
-```bash
-curl -fLO https://github.com/mikonyaa/ResizeLint/releases/download/1.0.0/ResizeLint-1.0.0-macos-universal.pkg
-sudo installer -pkg ResizeLint-1.0.0-macos-universal.pkg -target /
-resizelint version
-```
-
-**[Open repository](https://github.com/mikonyaa/ResizeLint)** · [Release 1.0.0](https://github.com/mikonyaa/ResizeLint/releases/tag/1.0.0) · [Rule reference](https://github.com/mikonyaa/ResizeLint/tree/1.0.0/Docs/Rules) · [CLI reference](https://github.com/mikonyaa/ResizeLint/blob/1.0.0/Docs/CLI.md)
+<!-- catalog:begin -->
 
 ## Choose by outcome
 
-- **I already have an app and need better tab navigation:** start with [Liquid Glass Tab Bars](https://github.com/mikonyaa/LiquidGlassTabBars).
-- **I am defining navigation for a new iPhone and iPad product:** start with [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell).
-- **I need glanceable status outside the app:** start with [Live Activity & Dynamic Island Kit](https://github.com/mikonyaa/LiveActivityDynamicIslandKit).
-- **I am building a focused Mac utility:** start with [Mac Menu Bar Command Kit](https://github.com/mikonyaa/MacMenuBarCommandKit).
-- **I need to catch non-adaptive UIKit assumptions before runtime QA:** add [ResizeLint](https://github.com/mikonyaa/ResizeLint) locally and in CI.
+- **Improve tab navigation in an existing iOS app** → [Liquid Glass Tab Bars](#liquid-glass-tab-bars) · 1.0.3
+- **Define navigation for a new iPhone and iPad product** → [Adaptive App Shell](#adaptive-app-shell) · 1.0.3
+- **Show glanceable status on the Lock Screen and Dynamic Island** → [Live Activity & Dynamic Island Kit](#live-activity-dynamic-island-kit) · 0.1.0
+- **Build a focused Mac menu bar utility** → [Mac Menu Bar Command Kit](#mac-menu-bar-command-kit) · 0.2.0
+- **Find non-adaptive Swift and UIKit assumptions before runtime QA** → [ResizeLint](#resizelint) · 1.0.0
 
-Pick the smallest project that owns the problem. Combining all four templates is rarely the right first move; ResizeLint can verify any Swift app independently.
+Pick the smallest package that owns your problem. The four UI templates are independent; ResizeLint can be used separately.
 
-## Collection quality bar
+**Released** means a published release at the named tag. **Preview** means unreleased or prerelease work. **Verified scope** states only the checks actually performed; source review and CI do not establish device or production behavior.
 
-Every listed repository is expected to provide:
+## Templates
 
-- a focused Swift Package with no third-party runtime dependency;
-- a runnable Xcode project backed by deterministic local data;
-- platform-appropriate accessibility and earlier-system fallbacks;
-- unit tests, CI, a changelog, and versioned releases for published templates;
-- architecture, integration, customization, and quality guidance;
-- screenshots or motion captured from the real demo rather than concept renders.
+<a name="liquid-glass-tab-bars"></a>
 
-Developer tools may replace the runnable app demo with reproducible CLI fixtures, machine-readable output, release checksums, and platform-specific distribution evidence. They remain separate from the design-template count.
+### Liquid Glass Tab Bars
+
+> **Released 1.0.3** · iOS 17+; macOS 14+ (package) · Swift 6.0; Xcode 26+ for native Liquid Glass
+
+Three tab-bar approaches around one selection model: system, floating, and morphing.
+
+<p align="center">
+  <a href="Assets/liquid-glass-tab-bars.gif">
+    <img src="Assets/liquid-glass-tab-bars-poster.png" width="320" alt="Real demo frame showing the Home tab and system tab navigation">
+  </a>
+</p>
+
+[Watch the original animation](Assets/liquid-glass-tab-bars.gif)
+
+**When a simpler solution is enough:** Use the system TabView when it already meets your needs.
+
+- The source provides custom variants for 2–5 destinations, accessibility settings, and guarded iOS 26 styling.
+
+**Limits:**
+
+- Use system navigation for more than five destinations. Earlier OS versions use fallbacks; device accessibility has not been independently checked here.
+
+**Verified scope · source-review · 2026-10-14:** Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.
+
+[Repository](https://github.com/mikonyaa/LiquidGlassTabBars) · [Release 1.0.3](https://github.com/mikonyaa/LiquidGlassTabBars/releases/tag/1.0.3) · [Versioned docs](https://github.com/mikonyaa/LiquidGlassTabBars/tree/828ded25395e66fa7640d496ecc18cc83e6b1777/Docs) · [Evidence and scope](Docs/Catalog-evidence.md#liquid-glass-tab-bars)
+
+---
+
+<a name="adaptive-app-shell"></a>
+
+### Adaptive App Shell
+
+> **Released 1.0.3** · iOS 17+; macOS 14+ (package) · Swift 6.0; Xcode 26+
+
+A shared state model for compact tabs, a regular-width sidebar, and an optional inspector.
+
+<p align="center">
+  <a href="Assets/adaptive-app-shell.gif">
+    <img src="Assets/adaptive-app-shell-poster.png" width="320" alt="Real demo frame showing the iPhone overview and project list">
+  </a>
+</p>
+
+[Watch the original animation](Assets/adaptive-app-shell.gif)
+
+**When a simpler solution is enough:** Skip a full shell when an existing app only needs a tab-bar component.
+
+- The source includes per-destination navigation paths, enum-based deep links, and three semantic themes.
+
+**Limits:**
+
+- The demo Create action only dismisses its sheet; it does not add or persist a project. Supply your own business model and persistence.
+
+**Verified scope · source-review · 2026-10-14:** Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.
+
+[Repository](https://github.com/mikonyaa/AdaptiveAppShell) · [Release 1.0.3](https://github.com/mikonyaa/AdaptiveAppShell/releases/tag/1.0.3) · [Versioned docs](https://github.com/mikonyaa/AdaptiveAppShell/tree/ed5cc9573a7258cc2549125d538102c9029e753a/Docs) · [Evidence and scope](Docs/Catalog-evidence.md#adaptive-app-shell)
+
+---
+
+<a name="live-activity-dynamic-island-kit"></a>
+
+### Live Activity & Dynamic Island Kit
+
+> **Released 0.1.0** · iOS 17+; macOS 14+ (package) · Swift 6.0; Xcode 16.4+
+
+A domain-neutral rendering core with Activity Lab examples and an app-owned ActivityKit lifecycle.
+
+<p align="center">
+  <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">
+    <img src="Assets/live-activity-dynamic-island-kit.png" width="360" alt="Existing real Activity Lab screenshot">
+  </a>
+</p>
+
+**When a simpler solution is enough:** Skip ActivityKit when status only needs to appear inside the app.
+
+- The source contains Lock Screen and compact, minimal, expanded Dynamic Island views plus start, update, recovery, and end examples.
+
+**Limits:**
+
+- Selecting another scenario can update content while the active activity keeps its original attributes. End and restart the activity when changing scenario; device lifecycle is unverified here.
+
+**Verified scope · source-review · 2026-10-14:** Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.
+
+[Repository](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) · [Release 0.1.0](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/releases/tag/0.1.0) · [Versioned docs](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/f577568f466136e28da427e55aa639170fafbac6/Docs) · [Evidence and scope](Docs/Catalog-evidence.md#live-activity-dynamic-island-kit)
+
+---
+
+<a name="mac-menu-bar-command-kit"></a>
+
+### Mac Menu Bar Command Kit
+
+> **Released 0.2.0** · macOS 14+ · Swift 6.0; Xcode 26+
+
+A keyboard-first command shell for focused macOS utilities.
+
+<p align="center">
+  <a href="https://github.com/mikonyaa/MacMenuBarCommandKit">
+    <img src="Assets/mac-menu-bar-command-kit.png" width="760" alt="Real Mac command demo dashboard screenshot">
+  </a>
+</p>
+
+**When a simpler solution is enough:** Skip a command shell for a single standard MenuBarExtra menu.
+
+- The source includes MenuBarExtra, a main window, command palette, Settings, Launch at Login integration, and clipboard handlers.
+
+**Limits:**
+
+- Start Timer increments focus minutes and sets a flag; it does not measure elapsed time. Implement a real timer in the app.
+
+**Verified scope · source-review · 2026-10-14:** Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.
+
+[Repository](https://github.com/mikonyaa/MacMenuBarCommandKit) · [Release 0.2.0](https://github.com/mikonyaa/MacMenuBarCommandKit/releases/tag/0.2.0) · [Versioned docs](https://github.com/mikonyaa/MacMenuBarCommandKit/tree/ab43ae5d750f1005ee3e704b3756f4af8c2b3a37/Docs) · [Evidence and scope](Docs/Catalog-evidence.md#mac-menu-bar-command-kit)
+
+---
+
+## Developer tool
+
+<a name="resizelint"></a>
+
+### ResizeLint
+
+> **Released 1.0.0** · macOS 14+; Ubuntu 22.04+ x86_64 with Swift runtime · Swift 6.3.3 (source build)
+
+A local CLI for detecting global screen, scene, device idiom, orientation, and layout assumptions.
+
+<p align="center">
+  <a href="https://github.com/mikonyaa/ResizeLint">
+    <img src="Assets/resizelint-terminal.svg" width="760" alt="ResizeLint terminal illustration showing an RL001 diagnostic; not a captured test result">
+  </a>
+</p>
+
+**When a simpler solution is enough:** Static diagnostics complement resizing and device QA; they cannot prove runtime layout correctness.
+
+- The source defines nine rules, human/Xcode/JSON/SARIF output, and a checksum-verifying Action. Source stays local during analysis.
+
+**Limits:**
+
+- The published Linux 1.0.0 archive needs Swift shared libraries including libswiftCore.so; a clean Ubuntu install alone is insufficient. macOS signing/notarization is evidenced by release CI, not an independent Gatekeeper check in this catalog.
+
+**Verified scope · source-review · 2026-10-14:** Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.
+
+[Repository](https://github.com/mikonyaa/ResizeLint) · [Release 1.0.0](https://github.com/mikonyaa/ResizeLint/releases/tag/1.0.0) · [Versioned docs](https://github.com/mikonyaa/ResizeLint/tree/cde1a7b5165cd6dc225166e6e0a7614a32ebce28/Docs) · [Evidence and scope](Docs/Catalog-evidence.md#resizelint)
+
+---
+
+<!-- catalog:end -->
+
+## Quality criteria by role
+
+These are maintenance criteria, not a blanket guarantee that every demo scenario is finished:
+
+- **UI templates:** a focused reusable package, explicit Apple-platform requirements, a demo with local data, accessibility and fallback guidance, tests, versioned docs, and real preview captures. The reusable package manifests declare no third-party Swift dependencies; demo build tooling is a separate concern.
+- **CLI tooling:** reproducible fixtures, deterministic reports, documented source dependencies and platform runtime requirements, checksums, and distribution evidence. ResizeLint uses SwiftSyntax, ArgumentParser, and Yams; a Linux binary may require Swift shared libraries.
+- **Catalog:** consistent EN/RU facts, traceable claims, correct support routes, intact local links, and an enforced media byte budget. Catalog CI checks these facts; upstream CI and device acceptance have their own scopes.
 
 ## Use a template in three steps
 
-1. **Choose** the smallest repository that matches the product problem.
-2. **Run** its checked-in demo and read the architecture notes before copying code.
-3. **Adapt** the package or focused source while keeping business models and platform side effects in your app.
+1. Choose the smallest repository that matches the product problem.
+2. Read its versioned docs, run its demo in the required environment, and check the listed limitations.
+3. Keep business models, persistence, and platform side effects in your app when adapting the package.
 
-## Collection principles
+## Maintain the catalog
 
-- **Native behavior over imitation.** Platform conventions remain intact unless a custom interaction earns its complexity.
-- **Clarity over decoration.** Hierarchy, spacing, contrast, and motion support content rather than compete with it.
-- **Adaptation over rigid screens.** Components expose semantic configuration and respond to their environment.
-- **Finished systems over unfinished libraries.** Stable means the code, demo, docs, tests, release, and preview agree.
-- **Release truth over marketing.** Unreleased or device-gated work stays visibly labeled as preview.
+Run the offline check with Python 3.10+:
 
-New templates and tools appear only after they are runnable, documented, tested, and useful as independent products. Detailed implementation guidance belongs in each project repository. Collection-level proposals are welcome through [Issues](https://github.com/mikonyaa/Apple-Design-Templates/issues) after reviewing [CONTRIBUTING.md](CONTRIBUTING.md).
+```sh
+python3 Scripts/verify-catalog.py
+python3 Scripts/test-verify-catalog.py
+```
+
+Use `python3 Scripts/verify-catalog.py --online` to explicitly re-check releases and immutable commits. Unavailable network or rate limits report **UNVERIFIED** with a nonzero exit; the command never rewrites catalog facts.
+
+[Maintenance and media measurements](Docs/Catalog-maintenance.md) · [Evidence and scope](Docs/Catalog-evidence.md) · [Independent selection-test protocol](Docs/Selection-test.md)
+
+Catalog structure, broken catalog links, and collection proposals belong in [catalog Issues](https://github.com/mikonyaa/Apple-Design-Templates/issues). Implementation and integration questions belong in the relevant project; see [Contributing](CONTRIBUTING.md). Follow the affected project's [security policy](SECURITY.md) for vulnerability reports.
 
 ---
 
 <div align="center">
   <p><a href="CONTRIBUTING.md">Contributing</a> · <a href="SECURITY.md">Security</a> · <a href="LICENSE">MIT License</a></p>
   <p>Built and maintained by <a href="https://github.com/mikonyaa"><strong>miko.os</strong></a>.</p>
-  <p>If the collection helped you ship something better, consider starring the catalog or the template you used.</p>
 </div>

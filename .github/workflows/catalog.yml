@@ -19,18 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - name: Check responsive README structure
-        run: |
-          if grep -En '<table|<th|<td' README.md README.ru.md; then
-            echo "README product presentation must not use rigid table layouts."
-            exit 1
-          fi
-      - name: Check local links and media
-        run: |
-          ruby -e 'ARGV.each { |file| File.read(file).scan(/\[[^\]]*\]\(([^)]+)\)|(?:src|href)="([^"]+)"/) { |a,b| link=a||b; next if link.start_with?("http", "#", "mailto:"); path=link.split("#",2).first; abort("Missing #{path} referenced by #{file}") unless File.exist?(path) } }' README.md README.ru.md
-      - name: Check repository hygiene
-        run: |
-          if git ls-files | grep -E '(^|/)(\.DS_Store|Thumbs\.db|xcuserdata|DerivedData|\.build)(/|$)|\.(xcuserstate|xccheckout)$'; then
-            exit 1
-          fi
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Verify catalog integrity (offline)
+        run: python3 Scripts/verify-catalog.py
+      - name: Prove negative fixtures fail the gate
+        run: python3 Scripts/test-verify-catalog.py
+      - name: Check patch whitespace
+        run: git diff --check

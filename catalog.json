@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-14",
+  "media": {
+    "baseline_revision": "4828708e88c8410f1d870d6aef942058b1a56e42",
+    "baseline_raster_bytes": 8835016,
+    "baseline_all_local_bytes": 8838071,
+    "max_bytes": 5301009,
+    "shared": [
+      "Assets/banner.png"
+    ],
+    "baseline": [
+      {
+        "path": "Assets/banner.png",
+        "bytes": 85061
+      },
+      {
+        "path": "Assets/liquid-glass-tab-bars.gif",
+        "bytes": 2566851
+      },
+      {
+        "path": "Assets/adaptive-app-shell.gif",
+        "bytes": 4387038
+      },
+      {
+        "path": "Assets/live-activity-dynamic-island-kit.png",
+        "bytes": 389496
+      },
+      {
+        "path": "Assets/mac-menu-bar-command-kit.png",
+        "bytes": 1406570
+      },
+      {
+        "path": "Assets/resizelint-terminal.svg",
+        "bytes": 3055
+      }
+    ]
+  },
+  "products": [
+    {
+      "slug": "liquid-glass-tab-bars",
+      "kind": "template",
+      "name": "Liquid Glass Tab Bars",
+      "url": "https://github.com/mikonyaa/LiquidGlassTabBars",
+      "release": {
+        "tag": "1.0.3",
+        "commit": "828ded25395e66fa7640d496ecc18cc83e6b1777",
+        "status": "released"
+      },
+      "minimum_os": "iOS 17+; macOS 14+ (package)",
+      "toolchain": "Swift 6.0; Xcode 26+ for native Liquid Glass",
+      "scenario": {
+        "en": "Improve tab navigation in an existing iOS app",
+        "ru": "Улучшить tab bar в существующем iOS-приложении"
+      },
+      "unnecessary": {
+        "en": "Use the system TabView when it already meets your needs.",
+        "ru": "Если системного TabView достаточно, дополнительный package не требуется."
+      },
+      "summary": {
+        "en": "Three tab-bar approaches around one selection model: system, floating, and morphing.",
+        "ru": "Три варианта tab bar с общей моделью выбора: системный, floating и morphing."
+      },
+      "dependencies": [],
+      "claims": [
+        {
+          "text": {
+            "en": "The source provides custom variants for 2–5 destinations, accessibility settings, and guarded iOS 26 styling.",
+            "ru": "В исходниках есть custom-варианты для 2–5 разделов, настройки accessibility и условное оформление iOS 26."
+          },
+          "evidence": [
+            "source"
+          ]
+        }
+      ],
+      "limits": [
+        {
+          "text": {
+            "en": "Use system navigation for more than five destinations. Earlier OS versions use fallbacks; device accessibility has not been independently checked here.",
+            "ru": "Для более пяти разделов используйте системную навигацию. На старых ОС действуют fallbacks; accessibility на устройстве здесь независимо не проверялась."
+          },
+          "evidence": [
+            "demo-limit"
+          ]
+        }
+      ],
+      "verification": {
+        "type": "source-review",
+        "date": "2026-10-14",
+        "scope": {
+          "en": "Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.",
+          "ru": "Release metadata и versioned source; ссылка на CI относится к upstream. Независимого device или production test нет."
+        }
+      },
+      "evidence": [
+        {
+          "id": "release",
+          "type": "release-metadata",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/LiquidGlassTabBars/releases/tag/1.0.3",
+            "https://github.com/mikonyaa/LiquidGlassTabBars/tree/828ded25395e66fa7640d496ecc18cc83e6b1777"
+          ]
+        },
+        {
+          "id": "source",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/LiquidGlassTabBars/blob/828ded25395e66fa7640d496ecc18cc83e6b1777/Package.swift",
+            "https://github.com/mikonyaa/LiquidGlassTabBars/blob/828ded25395e66fa7640d496ecc18cc83e6b1777/README.md"
+          ]
+        },
+        {
+          "id": "demo-limit",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/LiquidGlassTabBars/blob/828ded25395e66fa7640d496ecc18cc83e6b1777/README.md"
+          ]
+        },
+        {
+          "id": "ci",
+          "type": "published-ci",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/LiquidGlassTabBars/actions/runs/29193187211",
+            "https://github.com/mikonyaa/LiquidGlassTabBars/tree/828ded25395e66fa7640d496ecc18cc83e6b1777"
+          ]
+        }
+      ],
+      "preview": {
+        "path": "Assets/liquid-glass-tab-bars-poster.png",
+        "width": 320,
+        "alt": {
+          "en": "Real demo frame showing the Home tab and system tab navigation",
+          "ru": "Кадр реального demo: Home и системная навигация по вкладкам"
+        },
+        "source": "https://github.com/mikonyaa/Apple-Design-Templates/blob/4828708e88c8410f1d870d6aef942058b1a56e42/Assets/liquid-glass-tab-bars.gif",
+        "motion": "Assets/liquid-glass-tab-bars.gif",
+        "frame": 48
+      },
+      "routes": {
+        "issues": "https://github.com/mikonyaa/LiquidGlassTabBars/issues/new/choose",
+        "security_policy": "https://github.com/mikonyaa/LiquidGlassTabBars/blob/main/SECURITY.md"
+      }
+    },
+    {
+      "slug": "adaptive-app-shell",
+      "kind": "template",
+      "name": "Adaptive App Shell",
+      "url": "https://github.com/mikonyaa/AdaptiveAppShell",
+      "release": {
+        "tag": "1.0.3",
+        "commit": "ed5cc9573a7258cc2549125d538102c9029e753a",
+        "status": "released"
+      },
+      "minimum_os": "iOS 17+; macOS 14+ (package)",
+      "toolchain": "Swift 6.0; Xcode 26+",
+      "scenario": {
+        "en": "Define navigation for a new iPhone and iPad product",
+        "ru": "Создать навигационную основу нового iPhone/iPad-продукта"
+      },
+      "unnecessary": {
+        "en": "Skip a full shell when an existing app only needs a tab-bar component.",
+        "ru": "Если существующему приложению нужен только tab bar, полноценный shell избыточен."
+      },
+      "summary": {
+        "en": "A shared state model for compact tabs, a regular-width sidebar, and an optional inspector.",
+        "ru": "Общая модель состояния для компактных tabs, sidebar на широком экране и опционального inspector."
+      },
+      "dependencies": [],
+      "claims": [
+        {
+          "text": {
+            "en": "The source includes per-destination navigation paths, enum-based deep links, and three semantic themes.",
+            "ru": "В исходниках есть независимые navigation paths, deep links через enum и три семантические темы."
+          },
+          "evidence": [
+            "source"
+          ]
+        }
+      ],
+      "limits": [
+        {
+          "text": {
+            "en": "The demo Create action only dismisses its sheet; it does not add or persist a project. Supply your own business model and persistence.",
+            "ru": "Create в demo только закрывает sheet: проект не добавляется и не сохраняется. Бизнес-модель и persistence нужно реализовать в приложении."
+          },
+          "evidence": [
+            "demo-limit"
+          ]
+        }
+      ],
+      "verification": {
+        "type": "source-review",
+        "date": "2026-10-14",
+        "scope": {
+          "en": "Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.",
+          "ru": "Release metadata и versioned source; ссылка на CI относится к upstream. Независимого device или production test нет."
+        }
+      },
+      "evidence": [
+        {
+          "id": "release",
+          "type": "release-metadata",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/AdaptiveAppShell/releases/tag/1.0.3",
+            "https://github.com/mikonyaa/AdaptiveAppShell/tree/ed5cc9573a7258cc2549125d538102c9029e753a"
+          ]
+        },
+        {
+          "id": "source",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/AdaptiveAppShell/blob/ed5cc9573a7258cc2549125d538102c9029e753a/Package.swift",
+            "https://github.com/mikonyaa/AdaptiveAppShell/blob/ed5cc9573a7258cc2549125d538102c9029e753a/README.md"
+          ]
+        },
+        {
+          "id": "demo-limit",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/AdaptiveAppShell/blob/ed5cc9573a7258cc2549125d538102c9029e753a/Examples/AdaptiveShellDemo/AdaptiveShellDemo/StudioSheets.swift"
+          ]
+        },
+        {
+          "id": "ci",
+          "type": "published-ci",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/AdaptiveAppShell/actions/runs/29193186473",
+            "https://github.com/mikonyaa/AdaptiveAppShell/tree/ed5cc9573a7258cc2549125d538102c9029e753a"
+          ]
+        }
+      ],
+      "preview": {
+        "path": "Assets/adaptive-app-shell-poster.png",
+        "width": 320,
+        "alt": {
+          "en": "Real demo frame showing the iPhone overview and project list",
+          "ru": "Кадр реального demo: iPhone overview и список проектов"
+        },
+        "source": "https://github.com/mikonyaa/Apple-Design-Templates/blob/4828708e88c8410f1d870d6aef942058b1a56e42/Assets/adaptive-app-shell.gif",
+        "motion": "Assets/adaptive-app-shell.gif",
+        "frame": 60
+      },
+      "routes": {
+        "issues": "https://github.com/mikonyaa/AdaptiveAppShell/issues/new/choose",
+        "security_policy": "https://github.com/mikonyaa/AdaptiveAppShell/blob/main/SECURITY.md"
+      }
+    },
+    {
+      "slug": "live-activity-dynamic-island-kit",
+      "kind": "template",
+      "name": "Live Activity & Dynamic Island Kit",
+      "url": "https://github.com/mikonyaa/LiveActivityDynamicIslandKit",
+      "release": {
+        "tag": "0.1.0",
+        "commit": "f577568f466136e28da427e55aa639170fafbac6",
+        "status": "released"
+      },
+      "minimum_os": "iOS 17+; macOS 14+ (package)",
+      "toolchain": "Swift 6.0; Xcode 16.4+",
+      "scenario": {
+        "en": "Show glanceable status on the Lock Screen and Dynamic Island",
+        "ru": "Показывать краткий статус на Lock Screen и Dynamic Island"
+      },
+      "unnecessary": {
+        "en": "Skip ActivityKit when status only needs to appear inside the app.",
+        "ru": "Если статус нужен только внутри приложения, ActivityKit не требуется."
+      },
+      "summary": {
+        "en": "A domain-neutral rendering core with Activity Lab examples and an app-owned ActivityKit lifecycle.",
+        "ru": "Независимый от домена rendering core с примерами Activity Lab и lifecycle ActivityKit на стороне приложения."
+      },
+      "dependencies": [],
+      "claims": [
+        {
+          "text": {
+            "en": "The source contains Lock Screen and compact, minimal, expanded Dynamic Island views plus start, update, recovery, and end examples.",
+            "ru": "В исходниках есть Lock Screen, compact, minimal и expanded Dynamic Island, а также примеры start, update, recovery и end."
+          },
+          "evidence": [
+            "source"
+          ]
+        }
+      ],
+      "limits": [
+        {
+          "text": {
+            "en": "Selecting another scenario can update content while the active activity keeps its original attributes. End and restart the activity when changing scenario; device lifecycle is unverified here.",
+            "ru": "При выборе другого scenario content может обновиться, а attributes активной activity останутся прежними. Завершайте и запускайте activity при смене scenario; lifecycle на устройстве здесь не проверен."
+          },
+          "evidence": [
+            "demo-limit"
+          ]
+        }
+      ],
+      "verification": {
+        "type": "source-review",
+        "date": "2026-10-14",
+        "scope": {
+          "en": "Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.",
+          "ru": "Release metadata и versioned source; ссылка на CI относится к upstream. Независимого device или production test нет."
+        }
+      },
+      "evidence": [
+        {
+          "id": "release",
+          "type": "release-metadata",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/releases/tag/0.1.0",
+            "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/f577568f466136e28da427e55aa639170fafbac6"
+          ]
+        },
+        {
+          "id": "source",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/blob/f577568f466136e28da427e55aa639170fafbac6/Package.swift",
+            "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/blob/f577568f466136e28da427e55aa639170fafbac6/README.md"
+          ]
+        },
+        {
+          "id": "demo-limit",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/blob/f577568f466136e28da427e55aa639170fafbac6/Examples/LiveActivityDemo/LiveActivityDemo/LiveActivityDemoController.swift"
+          ]
+        },
+        {
+          "id": "ci",
+          "type": "published-ci",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/actions/runs/29208578871",
+            "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/tree/f577568f466136e28da427e55aa639170fafbac6"
+          ]
+        }
+      ],
+      "preview": {
+        "path": "Assets/live-activity-dynamic-island-kit.png",
+        "width": 360,
+        "alt": {
+          "en": "Existing real Activity Lab screenshot",
+          "ru": "Существующий скриншот реального Activity Lab"
+        },
+        "source": "https://github.com/mikonyaa/Apple-Design-Templates/blob/4828708e88c8410f1d870d6aef942058b1a56e42/Assets/live-activity-dynamic-island-kit.png"
+      },
+      "routes": {
+        "issues": "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/issues/new/choose",
+        "security_policy": "https://github.com/mikonyaa/LiveActivityDynamicIslandKit/blob/main/SECURITY.md"
+      }
+    },
+    {
+      "slug": "mac-menu-bar-command-kit",
+      "kind": "template",
+      "name": "Mac Menu Bar Command Kit",
+      "url": "https://github.com/mikonyaa/MacMenuBarCommandKit",
+      "release": {
+        "tag": "0.2.0",
+        "commit": "ab43ae5d750f1005ee3e704b3756f4af8c2b3a37",
+        "status": "released"
+      },
+      "minimum_os": "macOS 14+",
+      "toolchain": "Swift 6.0; Xcode 26+",
+      "scenario": {
+        "en": "Build a focused Mac menu bar utility",
+        "ru": "Создать сфокусированную Mac menu bar утилиту"
+      },
+      "unnecessary": {
+        "en": "Skip a command shell for a single standard MenuBarExtra menu.",
+        "ru": "Для одного стандартного меню MenuBarExtra полноценный command shell избыточен."
+      },
+      "summary": {
+        "en": "A keyboard-first command shell for focused macOS utilities.",
+        "ru": "Command shell с управлением с клавиатуры для сфокусированных macOS-утилит."
+      },
+      "dependencies": [],
+      "claims": [
+        {
+          "text": {
+            "en": "The source includes MenuBarExtra, a main window, command palette, Settings, Launch at Login integration, and clipboard handlers.",
+            "ru": "В исходниках есть MenuBarExtra, главное окно, command palette, Settings, интеграция Launch at Login и clipboard handlers."
+          },
+          "evidence": [
+            "source"
+          ]
+        }
+      ],
+      "limits": [
+        {
+          "text": {
+            "en": "Start Timer increments focus minutes and sets a flag; it does not measure elapsed time. Implement a real timer in the app.",
+            "ru": "Start Timer увеличивает focus minutes и выставляет флаг, но не измеряет elapsed time. Настоящий таймер нужно реализовать в приложении."
+          },
+          "evidence": [
+            "demo-limit"
+          ]
+        }
+      ],
+      "verification": {
+        "type": "source-review",
+        "date": "2026-10-14",
+        "scope": {
+          "en": "Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.",
+          "ru": "Release metadata и versioned source; ссылка на CI относится к upstream. Независимого device или production test нет."
+        }
+      },
+      "evidence": [
+        {
+          "id": "release",
+          "type": "release-metadata",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/MacMenuBarCommandKit/releases/tag/0.2.0",
+            "https://github.com/mikonyaa/MacMenuBarCommandKit/tree/ab43ae5d750f1005ee3e704b3756f4af8c2b3a37"
+          ]
+        },
+        {
+          "id": "source",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/MacMenuBarCommandKit/blob/ab43ae5d750f1005ee3e704b3756f4af8c2b3a37/Package.swift",
+            "https://github.com/mikonyaa/MacMenuBarCommandKit/blob/ab43ae5d750f1005ee3e704b3756f4af8c2b3a37/README.md"
+          ]
+        },
+        {
+          "id": "demo-limit",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/MacMenuBarCommandKit/blob/ab43ae5d750f1005ee3e704b3756f4af8c2b3a37/Examples/CommandKitDemo/CommandKitDemo/App/DemoCommandCatalog.swift"
+          ]
+        },
+        {
+          "id": "ci",
+          "type": "published-ci",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/MacMenuBarCommandKit/actions/runs/29193185600",
+            "https://github.com/mikonyaa/MacMenuBarCommandKit/tree/ab43ae5d750f1005ee3e704b3756f4af8c2b3a37"
+          ]
+        }
+      ],
+      "preview": {
+        "path": "Assets/mac-menu-bar-command-kit.png",
+        "width": 760,
+        "alt": {
+          "en": "Real Mac command demo dashboard screenshot",
+          "ru": "Скриншот dashboard реального Mac command demo"
+        },
+        "source": "https://github.com/mikonyaa/Apple-Design-Templates/blob/4828708e88c8410f1d870d6aef942058b1a56e42/Assets/mac-menu-bar-command-kit.png"
+      },
+      "routes": {
+        "issues": "https://github.com/mikonyaa/MacMenuBarCommandKit/issues/new/choose",
+        "security_policy": "https://github.com/mikonyaa/MacMenuBarCommandKit/blob/main/SECURITY.md"
+      }
+    },
+    {
+      "slug": "resizelint",
+      "kind": "tool",
+      "name": "ResizeLint",
+      "url": "https://github.com/mikonyaa/ResizeLint",
+      "release": {
+        "tag": "1.0.0",
+        "commit": "cde1a7b5165cd6dc225166e6e0a7614a32ebce28",
+        "status": "released"
+      },
+      "minimum_os": "macOS 14+; Ubuntu 22.04+ x86_64 with Swift runtime",
+      "toolchain": "Swift 6.3.3 (source build)",
+      "scenario": {
+        "en": "Find non-adaptive Swift and UIKit assumptions before runtime QA",
+        "ru": "Находить неадаптивные Swift/UIKit-предположения до runtime QA"
+      },
+      "unnecessary": {
+        "en": "Static diagnostics complement resizing and device QA; they cannot prove runtime layout correctness.",
+        "ru": "Статические diagnostics дополняют resizing и device QA, но не доказывают корректность layout во время выполнения."
+      },
+      "summary": {
+        "en": "A local CLI for detecting global screen, scene, device idiom, orientation, and layout assumptions.",
+        "ru": "Локальный CLI для поиска предположений о глобальном экране, scene, idiom, orientation и layout."
+      },
+      "dependencies": [
+        "SwiftSyntax",
+        "ArgumentParser",
+        "Yams"
+      ],
+      "claims": [
+        {
+          "text": {
+            "en": "The source defines nine rules, human/Xcode/JSON/SARIF output, and a checksum-verifying Action. Source stays local during analysis.",
+            "ru": "В исходниках определены девять правил, human/Xcode/JSON/SARIF output и Action с проверкой checksum. Анализ выполняется локально."
+          },
+          "evidence": [
+            "source"
+          ]
+        }
+      ],
+      "limits": [
+        {
+          "text": {
+            "en": "The published Linux 1.0.0 archive needs Swift shared libraries including libswiftCore.so; a clean Ubuntu install alone is insufficient. macOS signing/notarization is evidenced by release CI, not an independent Gatekeeper check in this catalog.",
+            "ru": "Опубликованный Linux-архив 1.0.0 требует Swift shared libraries, включая libswiftCore.so: одной чистой Ubuntu недостаточно. Подпись/notarization macOS подтверждается release CI, а не независимой проверкой Gatekeeper в этом каталоге."
+          },
+          "evidence": [
+            "demo-limit",
+            "linux-artifact",
+            "ci"
+          ]
+        }
+      ],
+      "verification": {
+        "type": "source-review",
+        "date": "2026-10-14",
+        "scope": {
+          "en": "Release metadata and versioned source; linked CI is upstream evidence. No independent device or production test.",
+          "ru": "Release metadata и versioned source; ссылка на CI относится к upstream. Независимого device или production test нет."
+        }
+      },
+      "evidence": [
+        {
+          "id": "release",
+          "type": "release-metadata",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/ResizeLint/releases/tag/1.0.0",
+            "https://github.com/mikonyaa/ResizeLint/tree/cde1a7b5165cd6dc225166e6e0a7614a32ebce28"
+          ]
+        },
+        {
+          "id": "source",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/ResizeLint/blob/cde1a7b5165cd6dc225166e6e0a7614a32ebce28/Package.swift",
+            "https://github.com/mikonyaa/ResizeLint/blob/cde1a7b5165cd6dc225166e6e0a7614a32ebce28/README.md"
+          ]
+        },
+        {
+          "id": "demo-limit",
+          "type": "source-review",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/ResizeLint/blob/cde1a7b5165cd6dc225166e6e0a7614a32ebce28/Package.swift"
+          ]
+        },
+        {
+          "id": "ci",
+          "type": "published-ci",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/ResizeLint/actions/runs/29513460101",
+            "https://github.com/mikonyaa/ResizeLint/tree/cde1a7b5165cd6dc225166e6e0a7614a32ebce28"
+          ]
+        },
+        {
+          "id": "linux-artifact",
+          "type": "artifact-inspection",
+          "date": "2026-10-14",
+          "sources": [
+            "https://github.com/mikonyaa/ResizeLint/releases/download/1.0.0/ResizeLint-1.0.0-linux-x86_64.tar.gz",
+            "https://github.com/mikonyaa/ResizeLint/tree/cde1a7b5165cd6dc225166e6e0a7614a32ebce28"
+          ],
+          "sha256": "4d1a116520e901076920262f7059a737d4af538738cdae4f8e1ff29df4a24225"
+        }
+      ],
+      "preview": {
+        "path": "Assets/resizelint-terminal.svg",
+        "width": 760,
+        "alt": {
+          "en": "ResizeLint terminal illustration showing an RL001 diagnostic; not a captured test result",
+          "ru": "Иллюстрация терминала ResizeLint с RL001; это не снимок результата теста"
+        },
+        "source": "https://github.com/mikonyaa/Apple-Design-Templates/blob/4828708e88c8410f1d870d6aef942058b1a56e42/Assets/resizelint-terminal.svg"
+      },
+      "routes": {
+        "issues": "https://github.com/mikonyaa/ResizeLint/issues/new/choose",
+        "security_policy": "https://github.com/mikonyaa/ResizeLint/blob/main/SECURITY.md"
+      }
+    }
+  ]
+}

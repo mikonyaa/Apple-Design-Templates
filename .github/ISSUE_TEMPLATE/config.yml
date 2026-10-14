@@ -12,3 +12,9 @@ contact_links:
   - name: Mac Menu Bar Command Kit issues
     url: https://github.com/mikonyaa/MacMenuBarCommandKit/issues/new/choose
     about: Report menu bar, command palette, and integration questions here.
+  - name: ResizeLint issues
+    url: https://github.com/mikonyaa/ResizeLint/issues/new/choose
+    about: Report CLI, rule, distribution, and Action integration questions here. Follow its SECURITY.md for vulnerabilities.
+  - name: Catalog documentation and links
+    url: https://github.com/mikonyaa/Apple-Design-Templates/issues/new
+    about: Report catalog structure, EN/RU wording, broken catalog links, or preview problems here.
