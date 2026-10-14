@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 from catalog_content import BEGIN, END, LANGUAGES, catalog_section, evidence_document
 
 SLUGS = {'liquid-glass-tab-bars', 'adaptive-app-shell', 'live-activity-dynamic-island-kit', 'mac-menu-bar-command-kit', 'resizelint'}
-TYPES = {'release-metadata', 'source-review', 'published-ci', 'artifact-inspection', 'native-test', 'device-test', 'independent-signing'}
+TYPES = {'release-metadata', 'source-review', 'published-ci', 'artifact-inspection', 'native-test', 'device-test', 'independent-signing', 'production-test'}
 VERSION = r'(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?'
 SHA = r'[0-9a-f]{40}'
 
@@ -69,6 +69,28 @@ def https_url(value, field):
     nonempty(value, field)
     parsed = urlsplit(value)
     require(parsed.scheme == 'https' and parsed.netloc == 'github.com' and not parsed.username and not parsed.password, field, 'expected a public https://github.com URL')
+
+
+def check_guarantees(text, evidence_types, field):
+    """Catch bounded affirmative guarantees in either language, anywhere in a claim.
+
+    This is a wording guard, not proof that an evidence URL contains a true test.
+    Maintainers still review the linked evidence and the scope of each guarantee.
+    """
+    patterns = (
+        (r'\b(?:tested|verified|validated|checked|proven)(?:\s+\w+){0,4}\s+on(?:\s+\w+){0,3}\s+devices?\b|\bdevice[- ](?:tested|verified)\b', 'device-test'),
+        (r'\b(?:проверен[аоы]?|протестирован[аоы]?|тестирован[аоы]?)(?:\s+\w+){0,3}\s+на\s+(?:\w+\s+){0,3}устройств\w*', 'device-test'),
+        (r'\bproduction[- ]ready\b|\bready for production\b|\bготов[аоы]?\s+к\s+(?:production|продакшену|промышленной эксплуатации)', 'production-test'),
+        (r'\bindependently\s+(?:\w+\s+){0,3}(?:signed|notarized|gatekeeper[- ](?:verified|checked|assessed))\b|\bнезависим\w*\s+(?:\w+\s+){0,3}(?:подпис\w*|провер\w*\s+gatekeeper)', 'independent-signing'),
+        (r'\bfully verified\b|\bcompletely tested\b|\bcomplete(?:d)?\s+(?:activitykit\s+)?demo\b|\bполностью\s+(?:проверен\w*|протестирован\w*)', 'native-test'),
+    )
+    for sentence in re.split(r'[.!?;]\s*', text.lower()):
+        for pattern,needed in patterns:
+            for match in re.finditer(pattern,sentence):
+                previous_words = re.findall(r'\w+',sentence[:match.start()])[-5:]
+                if any(word in {'no','not','never','without','не','нет','без'} for word in previous_words):
+                    continue
+                require(needed in evidence_types,field,f'affirmative guarantee requires {needed} evidence')
 
 
 def validate_schema(data, root):
@@ -128,9 +150,8 @@ def validate_schema(data, root):
                 bilingual(c['text'],cf+'.text')
                 require(isinstance(c['evidence'],list) and bool(c['evidence']) and all(isinstance(e,str) and e in by_id for e in c['evidence']),cf+'.evidence','claim needs valid provenance IDs')
                 claim_types = {by_id[e]['type'] for e in c['evidence']}
-                text = c['text']['en'].lower()
-                for pattern,needed in ((r'^(?:independently )?(?:device[- ]verified|tested on (?:physical )?devices)', 'device-test'), (r'^independently (?:signed|notarized|gatekeeper[- ]verified)', 'independent-signing')):
-                    require(not re.search(pattern,text) or needed in claim_types,cf+'.evidence',f'strong claim requires {needed} evidence')
+                for lang in ('en','ru'):
+                    check_guarantees(c['text'][lang],claim_types,cf+'.evidence.'+lang)
         pr = p['preview']
         shape(pr, ('path','width','alt','source'),f+'.preview', ('motion','frame'))
         local_path(root,pr['path'],f+'.preview.path')

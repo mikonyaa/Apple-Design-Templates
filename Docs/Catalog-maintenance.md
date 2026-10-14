@@ -13,6 +13,8 @@ The first command checks the manifest schema, five unique slugs and roles, safe 
 
 **Offline PASS is an integrity check**, not a new GitHub release check, native build, device test, signing check, or proof that the demo works end to end. A valid-looking nonexistent release must be checked online.
 
+Every claim references evidence IDs. A bounded wording guard also catches common affirmative device, production, signing, and complete-demo guarantees in either language and requires the corresponding evidence type. It is not a natural-language fact checker: maintainers must still inspect the linked evidence and avoid stronger claims than it supports.
+
 ```sh
 python3 Scripts/verify-catalog.py --online
 ```

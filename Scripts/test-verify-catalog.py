@@ -64,6 +64,16 @@ class CatalogGateTests(unittest.TestCase):
         self.edit_manifest(lambda d: d['products'][0]['claims'][0].update(evidence=[]))
         self.assert_rejected('claims[0].evidence')
 
+    def test_mid_sentence_device_guarantee_needs_device_evidence(self):
+        self.edit_manifest(lambda d: d['products'][0]['claims'][0]['text'].update(en='This package is tested on physical devices and is production-ready.'))
+        subprocess.run([sys.executable, str(self.root / 'Scripts/render-catalog.py')], check=True, capture_output=True)
+        self.assert_rejected('claims[0].evidence')
+
+    def test_russian_device_guarantee_needs_device_evidence(self):
+        self.edit_manifest(lambda d: d['products'][0]['claims'][0]['text'].update(ru='Этот пакет проверен на физических устройствах и готов к production.'))
+        subprocess.run([sys.executable, str(self.root / 'Scripts/render-catalog.py')], check=True, capture_output=True)
+        self.assert_rejected('claims[0].evidence')
+
     def test_unsafe_relative_path_is_rejected(self):
         self.edit_manifest(lambda d: d['products'][0]['preview'].update(path='../outside.png'))
         self.assert_rejected('preview.path')
