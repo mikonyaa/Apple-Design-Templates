@@ -1,10 +1,17 @@
 # Security Policy
 
-This catalog contains documentation and preview media only. Report a vulnerability in package or demo code through the private vulnerability reporting page of the affected template repository:
+This catalog contains documentation, preview media, and local catalog-checking scripts. For vulnerabilities in a package, demo, CLI, or upstream Action, follow the affected project's current policy:
 
-- [Liquid Glass Tab Bars security advisories](https://github.com/mikonyaa/LiquidGlassTabBars/security/advisories/new)
-- [Adaptive App Shell security advisories](https://github.com/mikonyaa/AdaptiveAppShell/security/advisories/new)
-- [Live Activity & Dynamic Island Kit security advisories](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/security/advisories/new)
-- [Mac Menu Bar Command Kit security advisories](https://github.com/mikonyaa/MacMenuBarCommandKit/security/advisories/new)
+- [Liquid Glass Tab Bars policy](https://github.com/mikonyaa/LiquidGlassTabBars/blob/main/SECURITY.md)
+- [Adaptive App Shell policy](https://github.com/mikonyaa/AdaptiveAppShell/blob/main/SECURITY.md)
+- [Live Activity & Dynamic Island Kit policy](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/blob/main/SECURITY.md)
+- [Mac Menu Bar Command Kit policy](https://github.com/mikonyaa/MacMenuBarCommandKit/blob/main/SECURITY.md)
+- [ResizeLint policy](https://github.com/mikonyaa/ResizeLint/blob/main/SECURITY.md)
 
-Do not publish suspected vulnerabilities in a public issue.
+ResizeLint requests GitHub private vulnerability reporting **when enabled**. If it is unavailable, its policy permits a minimal public issue requesting a private maintainer channel, without exploit details, credentials, private source, or local paths. A private reporting endpoint is not assumed to be enabled.
+
+MacMenuBarCommandKit requests a private report to its maintainer. LiveActivityDynamicIslandKit's policy gives integration precautions but does not specify a private reporting endpoint; consult the maintainer for a private channel without publishing sensitive details.
+
+For a catalog-script vulnerability, contact the catalog maintainer privately. If no private channel is available, request one in a minimal catalog issue containing no vulnerability details. Ordinary catalog links and wording problems belong in catalog issues.
+
+Do not publish exploit details or sensitive information in a public issue.

@@ -4,13 +4,14 @@ Thank you for helping improve Apple Design Templates.
 
 ## Where to open an issue
 
-- Report component bugs and integration questions in the affected template repository:
+- Report implementation bugs and integration questions in the affected project repository:
   [Liquid Glass Tab Bars](https://github.com/mikonyaa/LiquidGlassTabBars/issues/new/choose),
   [Adaptive App Shell](https://github.com/mikonyaa/AdaptiveAppShell/issues/new/choose),
   [Live Activity & Dynamic Island Kit](https://github.com/mikonyaa/LiveActivityDynamicIslandKit/issues/new/choose), or
-  [Mac Menu Bar Command Kit](https://github.com/mikonyaa/MacMenuBarCommandKit/issues/new/choose).
-- Use this catalog for collection structure, documentation shared by all templates, and proposals for a new standalone template.
-- Report security concerns through the private process described in [SECURITY.md](SECURITY.md).
+  [Mac Menu Bar Command Kit](https://github.com/mikonyaa/MacMenuBarCommandKit/issues/new/choose), or
+  [ResizeLint](https://github.com/mikonyaa/ResizeLint/issues/new/choose).
+- Use this catalog for collection structure, broken catalog links, EN/RU consistency, and proposals for a standalone template or tool.
+- Report security concerns using the affected project's policy listed in [SECURITY.md](SECURITY.md). ResizeLint's policy describes a fallback when private reporting is unavailable.
 
 ## Proposing a template
 
@@ -27,4 +28,6 @@ New templates should remain focused. A small, complete repository is preferred o
 
 ## Pull requests
 
-Keep catalog changes narrow, use clear commit messages, and verify every relative link and media asset before opening a pull request. Do not add generated build data, credentials, personal data, or application-specific source code.
+Keep catalog changes narrow and use clear commit messages. Update `catalog.json`, run `python3 Scripts/render-catalog.py`, then run `python3 Scripts/verify-catalog.py` and `python3 Scripts/test-verify-catalog.py`. Use the explicit `--online` mode to check release tags and immutable commits before changing a version. See [catalog maintenance](Docs/Catalog-maintenance.md) for the evidence and media checks.
+
+Do not add generated build data, credentials, personal data, or application-specific source code.
