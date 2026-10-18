@@ -4,7 +4,7 @@
 
 Выберите проект, изучите demo и ограничения, затем адаптируйте только нужную часть.
 
-[English](README.md) · [MIT](LICENSE) · Автор: [miko.os](https://github.com/mikonyaa)
+[English](README.md) · [MIT](LICENSE) · Автор: [miko](https://github.com/mikonyaa)
 
 <!-- catalog:begin -->
 

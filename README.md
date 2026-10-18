@@ -1,9 +1,9 @@
 <div align="center">
-  <a href="#choose-by-outcome"><img src="Assets/banner.png" alt="Apple Design Templates by miko.os" width="100%"></a>
+  <a href="#choose-by-outcome"><img src="Assets/banner.png" alt="Apple Design Templates — SwiftUI for Apple platforms" width="100%"></a>
   <h1>Apple Design Templates</h1>
   <p><strong>Focused SwiftUI starting points for Apple-platform products.</strong></p>
   <p>Choose a project. Inspect its demo and limitations. Adapt only what you need.</p>
-  <p>Curated by <a href="https://github.com/mikonyaa"><strong>miko.os</strong></a> · <a href="LICENSE">MIT</a></p>
+  <p>Curated by <a href="https://github.com/mikonyaa"><strong>miko</strong></a> · <a href="LICENSE">MIT</a></p>
   <p><a href="README.ru.md">Русская версия</a></p>
 </div>
 
@@ -206,5 +206,5 @@ Catalog structure, broken catalog links, and collection proposals belong in [cat
 
 <div align="center">
   <p><a href="CONTRIBUTING.md">Contributing</a> · <a href="SECURITY.md">Security</a> · <a href="LICENSE">MIT License</a></p>
-  <p>Built and maintained by <a href="https://github.com/mikonyaa"><strong>miko.os</strong></a>.</p>
+  <p>Built and maintained by <a href="https://github.com/mikonyaa"><strong>miko</strong></a>.</p>
 </div>
