@@ -44,15 +44,15 @@ The baseline is catalog commit `4828708e88c8410f1d870d6aef942058b1a56e42`. Its e
 
 | Displayed file | Before bytes | After bytes |
 | --- | ---: | ---: |
-| Banner PNG | 85,061 | 85,061 |
+| Banner PNG | 85,061 | 1,451,147 |
 | Liquid Glass GIF → PNG poster, frame 48 | 2,566,851 | 102,662 |
 | Adaptive GIF → PNG poster, frame 60 | 4,387,038 | 99,027 |
 | Live Activity PNG | 389,496 | 389,496 |
 | Mac command PNG | 1,406,570 | 1,406,570 |
 | ResizeLint SVG | 3,055 | 3,055 |
-| **All embedded local files** | **8,838,071** | **2,085,871** |
+| **All embedded local files** | **8,838,071** | **3,451,957** |
 
-The current set is **76.4% smaller by bytes**. The gate measures unique files used by either language, including SVG, against **5,301,009 bytes**, the requested 60% raster-baseline cap rounded down. The Russian page reuses the same preview files, so they are counted once. Remote page chrome, network speed, and GitHub transfer behavior are not measured by this byte comparison.
+The current set is **60.9% smaller by bytes**. The gate measures unique files used by either language, including SVG, against **5,301,009 bytes**, the requested 60% raster-baseline cap rounded down. The Russian page reuses the same preview files, so they are counted once. Remote page chrome, network speed, and GitHub transfer behavior are not measured by this byte comparison.
 
 Posters retain the full 400×870 decoded GIF frame, saved losslessly. The original animations remain intact and are loaded when explicitly opened. They are not embedded in the README. Reproduce the posters with FFmpeg:
 
